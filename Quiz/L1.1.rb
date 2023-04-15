@@ -36,3 +36,28 @@
 # - Count the letter for integers fo each index in the array AND append to empty array 
 # Return empty array 
 
+
+
+#def string_lengths(sentence)
+#    words = sentence.split
+#    word_lengths = []
+#    counter = 0
+
+#    while counter < words.size do
+#        word_lengths << words[counter].length
+#        counter += 1
+#    end
+
+#    word_lengths
+#end
+
+def string_lengths(sentence)
+    strings = sentence.split
+
+    strings.map { |chars| chars.length}
+end
+
+
+
+new_string = string_lengths('to be or not to be')
+print new_string
