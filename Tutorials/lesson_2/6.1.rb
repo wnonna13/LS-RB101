@@ -53,6 +53,15 @@ puts multiline
 puts "Please choose an option:"
 user_input = gets.chomp
 
+case user_input
+when 1
+    puts "Ok!"
+when 4
+    puts "No"
+else
+    puts "Sorry"
+end
+
 
 puts "You chose #{user_input}, is this correct? Yes or No?"
 user_validation = gets.chomp
