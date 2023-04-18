@@ -38,7 +38,7 @@
 # Perform operation 
 # Display result
 
-multiline = <<-TEXT
+multiline = <<~TEXT
     Welcome to the Ruby Operations Calculator!
 
     Please select one from the four options below:
@@ -50,3 +50,9 @@ multiline = <<-TEXT
 TEXT
 
 puts multiline
+
+user_input = gets.chomp
+
+puts "You chose #{user_input}, is this correct? Yes or No?"
+
+user_validation = gets.chomp
