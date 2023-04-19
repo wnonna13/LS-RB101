@@ -73,5 +73,11 @@ if
     user_validation == 'yes' || user_validation == 'y'
     puts "Thank you."
 elsif 
-    puts "Ok, Would you like to change it?"
+    puts "Ok, Please select the one you want."
+    puts multiline
+    #user_change = gets.chomp.downcase
+    #if user_change == 'yes' || user_validation == 'y'
+    #    puts "Ok"
+    #    puts multiline
+    #end
 end
