@@ -67,17 +67,25 @@ else
 end
 
 
-puts "You chose #{user_input}, is this correct? Yes or No?"
-user_validation = gets.chomp.downcase
-if
-    user_validation == 'yes' || user_validation == 'y'
-    puts "Thank you."
-elsif 
-    puts "Ok, Please select the one you want."
-    puts multiline
+puts "Please type an integer."
+user_num_1 = gets.chomp.to_i
+puts "Thank you! You chose #{user_num_1}"
+
+
+
+
+
+#puts "You chose #{user_input}, is this correct? Yes or No?"
+#user_validation = gets.chomp.downcase
+#if
+#    user_validation == 'yes' || user_validation == 'y'
+#    puts "Thank you."
+#elsif 
+#    puts "Ok, Please select the one you want."
+#    puts multiline
     #user_change = gets.chomp.downcase
     #if user_change == 'yes' || user_validation == 'y'
     #    puts "Ok"
     #    puts multiline
     #end
-end
+#end
