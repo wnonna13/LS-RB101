@@ -51,15 +51,19 @@ TEXT
 
 puts multiline
 puts "Please choose an option:"
-user_input = gets.chomp
+user_input = gets.chomp.to_i
 
 case user_input
 when 1
-    puts "Ok!"
+    puts "You have chosen addition!"
+when 2 
+    puts "You have chosen subtraction!"
+when 3
+    puts "You have chosen multiplication!"
 when 4
-    puts "No"
+    puts "You have chosen division!"
 else
-    puts "Sorry"
+    puts "Sorry, I don't recognize that."
 end
 
 
