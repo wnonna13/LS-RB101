@@ -71,8 +71,17 @@ puts "Please type an integer."
 user_num_1 = gets.chomp.to_i
 puts "Thank you! You chose #{user_num_1}"
 
+puts "Please type another integer."
+user_num_2 = gets.chomp.to_i
+puts "OK, so you chose #{user_num_2} for your second integer."
 
+puts "Processing now........"
 
+if user_input == 1
+    result = user_num_1 + user_num_2
+    puts "Ok! The result of #{user_num_1} + #{user_num_2} is #{result}!"
+
+end
 
 
 #puts "You chose #{user_input}, is this correct? Yes or No?"
