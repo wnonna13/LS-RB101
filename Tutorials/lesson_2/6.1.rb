@@ -68,4 +68,10 @@ end
 
 
 puts "You chose #{user_input}, is this correct? Yes or No?"
-user_validation = gets.chomp
+user_validation = gets.chomp.downcase
+if
+    user_validation == 'yes' || user_validation == 'y'
+    puts "Thank you."
+elsif 
+    puts "Ok, Would you like to change it?"
+end
