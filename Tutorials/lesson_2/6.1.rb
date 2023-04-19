@@ -80,6 +80,9 @@ puts "Processing now........"
 if user_input == 1
     result = user_num_1 + user_num_2
     puts "Ok! The result of #{user_num_1} + #{user_num_2} is #{result}!"
+elsif user_input == 2
+    result = user_num_1 - user_num_2
+    puts "Ok! The result of #{user_num_1} - #{user_num_2} is #{result}!"
 
 end
 
