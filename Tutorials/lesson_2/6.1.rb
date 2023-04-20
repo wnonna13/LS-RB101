@@ -84,9 +84,18 @@ while is_valid_input == false
 end
 
 
-puts "Please type an integer."
-is_valid_num_1 = false
-user_num_1 = gets.chomp.to_i
+
+#is_valid_num_1 = false
+
+#while is_valid_num_1 == false
+#    begin 
+#        puts "Please type an integer."
+#        user_num_1 = gets.chomp.to_i
+#        is_valid_num_1 = true
+#    rescue TypeError
+#        puts "That is not an integer"
+#        is_valid_num_1 = false
+#end
 
 #while is_valid_num_1 == false
     
