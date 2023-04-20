@@ -85,16 +85,22 @@ end
 
 
 puts "Please type an integer."
-user_num_1 = gets.chomp
+is_valid_num_1 = false
+user_num_1 = gets.chomp.to_i
 
+#while is_valid_num_1 == false
+    
+#    if user_num_1.is_a? Integer == true
+#        user_num_1 = gets.chomp.to_i
+#        puts "Thank you! You chose #{user_num_1}"
+#        is_valid_num_1 = true
+#    else
+#        puts "That is not an integer."
+#        is_valid_num_1 = false
+#        user_num_1 = gets.chomp
+#    end
 
-if user_num_1.is_a? Integer
-    user_num_1 = gets.chomp.to_i
-    puts "Thank you! You chose #{user_num_1}"
-else
-    puts "That is not an integer."
 end
-
 
 
 puts "Please type another integer."
