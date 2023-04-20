@@ -78,7 +78,7 @@ while is_valid_input == false
     else
         puts "Sorry, I don't recognize that."
         is_valid_input = false
-        puts "Please choose an option:"
+        puts "Please choose a valid option: 1, 2, 3, 4"
         user_input = gets.chomp.to_i
     end
 end
