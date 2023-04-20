@@ -53,6 +53,13 @@ puts multiline
 puts "Please choose an option:"
 user_input = gets.chomp.to_i
 
+if user_input.is_a? Integer
+    user_input = user_input.to_i
+    puts "Ok, #{user_input} is valid!"
+else
+    puts "Sorry, that is invaild."
+end
+
 case user_input
 when 1
     puts "You have chosen addition!"
