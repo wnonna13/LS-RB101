@@ -53,24 +53,34 @@ puts multiline
 puts "Please choose an option:"
 user_input = gets.chomp.to_i
 
-if user_input.is_a? Integer
-    user_input = user_input.to_i
-    puts "Ok, #{user_input} is valid!"
-else
-    puts "Sorry, that is invaild."
-end
+#if user_input.is_a? Integer
+#    user_input = user_input.to_i
+#    puts "Ok, #{user_input} is valid!"
+#else
+#    puts "Sorry, that is invaild."
+#end
+is_valid_input = false
 
-case user_input
-when 1
-    puts "You have chosen addition!"
-when 2 
-    puts "You have chosen subtraction!"
-when 3
-    puts "You have chosen multiplication!"
-when 4
-    puts "You have chosen division!"
-else
-    puts "Sorry, I don't recognize that."
+while is_valid_input == false
+    case user_input
+    when 1
+        puts "You have chosen addition!"
+        is_valid_input = true
+    when 2 
+        puts "You have chosen subtraction!"
+        is_valid_input = true
+    when 3
+        puts "You have chosen multiplication!"
+        is_valid_input = true
+    when 4
+        puts "You have chosen division!"
+        is_valid_input = true
+    else
+        puts "Sorry, I don't recognize that."
+        is_valid_input = false
+        puts "Please choose an option:"
+        user_input = gets.chomp.to_i
+    end
 end
 
 
