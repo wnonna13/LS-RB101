@@ -110,13 +110,26 @@ end
 #    end
 
 puts "Please type an integer (except 0)"
-user_num_1 = Integer(gets.chomp) rescue false
+is_num_1 = false
 
-if user_num_1
-    puts "Ok, thank you!"
-else
-    puts "Sorry, try again."
+while is_num_1 == false
+    user_num_1 = Integer(gets.chomp) rescue false
+    if user_num_1
+        puts "Ok, thank you!"   
+        is_num_1 = true
+    else
+        puts "Sorry, try again."
+        is_num_1 = false
+    end
 end
+
+
+#is_valid_num_1 = false
+
+
+
+
+
 
 puts "Please type another integer."
 user_num_2 = gets.chomp.to_i
