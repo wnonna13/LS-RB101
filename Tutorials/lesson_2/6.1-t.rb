@@ -23,4 +23,5 @@ Kernel.puts("the first number is: " + number1 + "!")
 Kernel.puts(number2.chomp().inspect())
 Kernel.puts("the second number is: " + number2 + "!")
 
-Kernel.puts("What operation would you like to perform? 1) add 2) subtract 3) multiply 4)divide")
+Kernel.puts("What operation would you like to perform? 1)add 2)subtract 3)multiply 4)divide")
+operator = Kernel.gets().chomp()
