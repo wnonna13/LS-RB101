@@ -12,7 +12,7 @@ puts answer
 Kernel.puts("Welcome to Calculator!")
 
 Kernel.puts("What's the first number?")
-number1 = Kernel.gets()
+number1 = Kernel.gets().chomp()
 
 
 Kernel.puts(number1.chomp().inspect())
