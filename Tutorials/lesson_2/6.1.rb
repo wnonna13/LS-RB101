@@ -53,12 +53,7 @@ puts multiline
 puts "Please choose an option:"
 user_input = gets.chomp.to_i
 
-#if user_input.is_a? Integer
-#    user_input = user_input.to_i
-#    puts "Ok, #{user_input} is valid!"
-#else
-#    puts "Sorry, that is invaild."
-#end
+
 is_valid_input = false
 
 while is_valid_input == false
@@ -85,29 +80,7 @@ end
 
 
 
-#is_valid_num_1 = false
 
-#while is_valid_num_1 == false
-#    begin 
-#        puts "Please type an integer."
-#        user_num_1 = gets.chomp.to_i
-#        is_valid_num_1 = true
-#    rescue TypeError
-#        puts "That is not an integer"
-#        is_valid_num_1 = false
-#end
-
-#while is_valid_num_1 == false
-    
-#    if user_num_1.is_a? Integer == true
-#        user_num_1 = gets.chomp.to_i
-#        puts "Thank you! You chose #{user_num_1}"
-#        is_valid_num_1 = true
-#    else
-#        puts "That is not an integer."
-#        is_valid_num_1 = false
-#        user_num_1 = gets.chomp
-#    end
 
 puts "Please type an integer"
 is_num_1 = false
@@ -124,7 +97,7 @@ while is_num_1 == false
 end
 
 
-#is_valid_num_1 = false
+
 
 puts "Please type another integer"
 is_num_2 = false
@@ -143,9 +116,6 @@ end
 
 
 
-#puts "Please type another integer."
-#user_num_2 = gets.chomp.to_i
-#puts "OK, so you chose #{user_num_2} for your second integer."
 
 puts "Processing now........"
 
@@ -163,18 +133,3 @@ elsif user_input == 4
     puts "Ok! The result of #{user_num_1} / #{user_num_2} is #{result}!"
 end
 
-
-#puts "You chose #{user_input}, is this correct? Yes or No?"
-#user_validation = gets.chomp.downcase
-#if
-#    user_validation == 'yes' || user_validation == 'y'
-#    puts "Thank you."
-#elsif 
-#    puts "Ok, Please select the one you want."
-#    puts multiline
-    #user_change = gets.chomp.downcase
-    #if user_change == 'yes' || user_validation == 'y'
-    #    puts "Ok"
-    #    puts multiline
-    #end
-#end
