@@ -109,7 +109,7 @@ end
 #        user_num_1 = gets.chomp
 #    end
 
-puts "Please type an integer (except 0)"
+puts "Please type an integer"
 is_num_1 = false
 
 while is_num_1 == false
@@ -126,7 +126,7 @@ end
 
 #is_valid_num_1 = false
 
-puts "Please type another integer (except 0)"
+puts "Please type another integer"
 is_num_2 = false
 
 while is_num_2 == false
