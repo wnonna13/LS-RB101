@@ -29,3 +29,5 @@ operator = Kernel.gets().chomp()
 if operator == '1'
     result = number1 + number2
 end
+
+Kernel.puts("The result is #{result}!")
