@@ -109,6 +109,14 @@ end
 #        user_num_1 = gets.chomp
 #    end
 
+puts "Please type an integer (except 0)"
+user_num_1 = gets.chomp.to_i
+
+if user_num_1 = 0
+    puts "Sorry that is invalid"
+else 
+    puts "Thank you"
+
 end
 
 
