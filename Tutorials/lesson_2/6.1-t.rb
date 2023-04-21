@@ -6,8 +6,8 @@
 #answer = Kernel.gets()
 #Kernel.puts(answer)
 
-answer = gets
-puts answer
+#answer = gets
+#puts answer
 
 Kernel.puts("Welcome to Calculator!")
 
