@@ -25,3 +25,7 @@ Kernel.puts("the second number is: " + number2 + "!")
 
 Kernel.puts("What operation would you like to perform? 1)add 2)subtract 3)multiply 4)divide")
 operator = Kernel.gets().chomp()
+
+if operator == '1'
+    result = number1 + number2
+end
