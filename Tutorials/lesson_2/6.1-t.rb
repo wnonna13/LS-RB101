@@ -3,4 +3,15 @@
 # perform the operation
 # output the result
 
-gets
+#answer = Kernel.gets()
+#Kernel.puts(answer)
+
+answer = gets
+puts answer
+
+Kernel.puts("Welcome to Calculator!")
+
+Kernel.puts("What's the first number?")
+number1 = Kernel.gets()
+
+Kernel.puts(number1)
