@@ -27,7 +27,7 @@ Kernel.puts("What operation would you like to perform? 1)add 2)subtract 3)multip
 operator = Kernel.gets().chomp()
 
 if operator == '1'
-    result = number1 + number2
+    result = number1.to_i() + number2.to_i()
 end
 
 Kernel.puts("The result is #{result}!")
