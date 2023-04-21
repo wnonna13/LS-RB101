@@ -34,6 +34,7 @@ elsif operator == '3'
     result = number1.to_i() * number2.to_i()
 elsif operator == '4'
     result = number1.to_f() / number2.to_f()
+    result = result.round(2)
 end
 
 Kernel.puts("The result is #{result}!")
