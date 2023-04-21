@@ -18,4 +18,7 @@ Kernel.puts("What's the second number?")
 number2 = Kernel.gets().chomp()
 
 Kernel.puts(number1.chomp().inspect())
-Kernel.puts("the number is: " + number1 + "!")
+Kernel.puts("the first number is: " + number1 + "!")
+
+Kernel.puts(number2.chomp().inspect())
+Kernel.puts("the second number is: " + number2 + "!")
