@@ -14,6 +14,8 @@ Kernel.puts("Welcome to Calculator!")
 Kernel.puts("What's the first number?")
 number1 = Kernel.gets().chomp()
 
+Kernel.puts("What's the second number?")
+number2 = Kernel.gets().chomp()
 
 Kernel.puts(number1.chomp().inspect())
 Kernel.puts("the number is: " + number1 + "!")
