@@ -15,5 +15,5 @@ Kernel.puts("What's the first number?")
 number1 = Kernel.gets()
 
 
-Kernel.puts(number1.inspect)
+Kernel.puts(number1.chomp().inspect())
 Kernel.puts("the number is: " + number1 + "!")
