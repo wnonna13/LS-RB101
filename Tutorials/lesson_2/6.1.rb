@@ -115,10 +115,10 @@ is_num_1 = false
 while is_num_1 == false
     user_num_1 = Integer(gets.chomp) rescue false
     if user_num_1
-        puts "Ok, thank you!"   
+        puts "Ok, thank you! You chose #{user_num_1} for the first number"   
         is_num_1 = true
     else
-        puts "Sorry, try again."
+        puts "Sorry, try again. Please enter an integer"
         is_num_1 = false
     end
 end
@@ -132,10 +132,10 @@ is_num_2 = false
 while is_num_2 == false
     user_num_2 = Integer(gets.chomp) rescue false
     if user_num_2
-        puts "Ok, thank you!"   
+        puts "Ok, thank you! You chose #{user_num_2} for the second number"   
         is_num_2 = true
     else
-        puts "Sorry, try again."
+        puts "Sorry, try again. Please enter an integer"
         is_num_2 = false
     end
 end
