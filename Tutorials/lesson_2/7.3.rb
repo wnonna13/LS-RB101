@@ -11,3 +11,5 @@ def find_greatest(numbers)
 
     saved_number
 end
+
+puts find_greatest([1, 5, 7, 2, 10, 3])
