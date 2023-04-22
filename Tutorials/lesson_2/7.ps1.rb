@@ -1,0 +1,1 @@
+# Create a method that returns the sum of two integers
