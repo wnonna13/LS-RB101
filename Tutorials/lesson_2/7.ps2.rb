@@ -7,18 +7,34 @@
 # Return saved new string
 
 
-##########
-START
+########################################
+
+#START
 #Given an array of strings called "strings"
 
-SET iterator = 1
-SET saved_string = string of concatenated strings
-SET space = " "
+#SET iterator = 1
+#SET saved_string = string of concatenated strings
+#SET space = " "
 
-WHILE iterator <= length of strings
-    SET current_string = string at space "iterator"
-    saved_string += space + current_string
+#WHILE iterator <= length of strings
+#    SET current_string = string at space "iterator"
+#    saved_string += space + current_string
 
-PRINT saved_string
+#PRINT saved_string
 
-END
+#END
+
+########################################
+
+def combined_string(strings)
+    saved_string = ""
+
+    strings.each do |str|
+        saved_string += " #{str}"
+    end
+
+    saved_string
+end
+
+
+puts combined_string(['hello', 'what', 'to', 'do'])
