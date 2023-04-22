@@ -33,8 +33,12 @@ def combined_string(strings)
         saved_string += " #{str}"
     end
 
-    saved_string
+    saved_string.lstrip
 end
 
 
 puts combined_string(['hello', 'what', 'to', 'do'])
+
+#TO FIX:
+    # - space at the beginning of 1st str
+    # -  figure out special characters: ! ? # ''
