@@ -21,3 +21,24 @@
     # Return nil 
 
 #################
+
+START
+# Given a string called "string"
+SET iterator = 1
+SET counter = 0
+SET char = character targeted
+
+WHILE iterator <= length of string || counter <= 3
+    IF current iteration == char
+        counter += 1
+    ELSE
+        nil
+    iterator += 1
+
+IF counter === 3
+    PRINT index of last iteration
+ELSE
+    PRINT nil
+
+
+END
