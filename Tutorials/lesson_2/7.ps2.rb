@@ -30,14 +30,18 @@ def combined_string(strings)
     saved_string = ""
 
     strings.each do |str|
-        saved_string += " #{str}"
+        if str == "?" || str == "!" || str == "." || str == ","
+            saved_string += "#{str}"
+        else
+            saved_string += " #{str}"
+        end
     end
 
     saved_string.lstrip
 end
 
 
-puts combined_string(['hello', 'what', 'to', 'do'])
+puts combined_string(['hello', 'what', 'to', 'do', '?'])
 
 #TO FIX:
     # - space at the beginning of 1st str
