@@ -44,20 +44,16 @@
 
 #################
 
-def get_third(string, char)
-    counter = nil
+def get_third(string, character)
+    counter = 0
     
-    string.each_with_index do |e, i|
-        if counter <= 3
-            if e == char
-                counter += 1
-            else 
-                nil
-            end
+    string.each_char.with_index do |e, i|
+        if e.to_s == character
+            puts "the same"
+            puts e
         else
-            i
+            puts "nope"
         end
-    
     end
 
 end
