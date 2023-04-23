@@ -46,16 +46,17 @@
 
 def get_third(string, character)
     counter = 0
+
     
     string.each_char.with_index do |e, i|
         if e.to_s == character
-            puts "the same"
-            puts e
+            counter += 1
         else
-            puts "nope"
+            nil
         end
     end
 
+    counter
 end
 
 puts get_third("axbxcxdxex", "x")
