@@ -46,30 +46,27 @@
 
 def get_third(string, character)
     counter = 0
-    index = ""
+    index = 0
 
-    
+
     string.each_char.with_index do |e, i|
-        #if ounter < 3 
 
-            if e.to_s == character
-                if counter < 3
-                    counter += 1
-                elsif counter == 3
-                    index += i.to_s
-                else
-                    nil
-                end
+
+        if e.to_s == character
+            if counter < 3
+                counter += 1
+            elsif counter == 3 && index == 0
+                index += i.to_i
             else
                 nil
             end
-        #else 
-        #    nil
-        #end
+        else
+            nil
+        end
 
     end
-
     index
+
 end
 
 puts get_third("axbxcxdxex", "x")
