@@ -70,3 +70,4 @@ def get_third(string, character)
 end
 
 puts get_third("axbxcxdxex", "x")
+puts get_third("wynonnaaaaaaanaaaa", "n")
