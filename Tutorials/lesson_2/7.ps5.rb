@@ -14,3 +14,10 @@
 # *** array 1 is even index, array 2 is odd index
 
 ###########
+
+# Create a new array, set it to empty
+# Iterate through first array
+    # Add each element to new array
+# Iterate through second array
+    # Add each element to new array 
+# Return new array
