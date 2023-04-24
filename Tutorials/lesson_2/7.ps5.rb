@@ -42,6 +42,8 @@
 
 ###########
 
+
+
 #def combine(array1, array2)
 #    saved_array = []
 
@@ -58,4 +60,21 @@
 #end
 
 #puts combine([1, 2, 3], [4, 5, 6]) # => [1, 4, 2, 5, 3, 6]
+
+
+######## TRY 2
+
+#Create new array
+#Create iterator1 for array1 
+#Create iterator2 for array2
+
+# Iterate over 1st array
+    # Add number to new array
+# Create nested loop for 2nd array
+    # If index is equal to iterator1, then add
+    # If not, pass
+
+# Return saved new array
+
+def combine(array1, array2)
 
