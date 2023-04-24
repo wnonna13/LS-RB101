@@ -24,18 +24,20 @@
 
 ###########
 
-START
+#START
 # Given a collection of integers within "array1" and "array2"
 
-SET saved_array = []
-SET iterator_array1 = 0
+#SET saved_array = []
+#SET iterator_array1 = 0
 
-WHILE iterator_array1 <= length of array1
-    APPEND element to saved_array
+#WHILE iterator_array1 <= length of array1
+#    APPEND element to saved_array
 
-WHILE iterator_array2 <= length of array2
-    APPEND element to saved_array at i + 1
+#WHILE iterator_array2 <= length of array2
+#    APPEND element to saved_array at i + 1
 
-PRINT saved_array
+#PRINT saved_array
 
-END
+#END
+
+###########
