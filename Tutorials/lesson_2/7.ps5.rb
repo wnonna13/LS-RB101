@@ -41,3 +41,20 @@
 #END
 
 ###########
+
+def combine(array1, array2)
+    saved_array = []
+
+    array1.each do |num|
+        saved_array.append(num)
+
+    end
+
+    array2.each do |num|
+        saved_array.append(num)
+    end
+
+    saved_array.inspect
+end
+
+puts combine([1, 2, 3], [4, 5, 6]) # => [1, 4, 2, 5, 3, 6]
