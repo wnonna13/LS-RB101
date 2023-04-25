@@ -79,13 +79,22 @@
 def combine(array1, array2)
     saved_array = []
     iterator_1 = 0
-    iterator_2 = 0
 
     array1.each do |e, i|
         if i == iterator_1
             saved_array.append(e)
             iterator_1 +=1
+            array2.each do |e, i|
+                if i == iterator_1.to_i - 1
+                    saved_array.append(e)
+                else
+                    nil
+                end
+            end
         else
             nil
         end
+    end
+    
+    puts saved_array
 end
