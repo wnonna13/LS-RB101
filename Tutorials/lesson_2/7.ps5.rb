@@ -80,9 +80,7 @@ def combine(array1, array2)
     saved_array = []
     iterator_1 = 0
 
-    array1.each do |e, i|
-        puts e
-        puts i
+    array1.each_with_index do |e, i|
         if i == iterator_1
             saved_array.append(e)
             iterator_1 +=1
