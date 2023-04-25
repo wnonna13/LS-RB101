@@ -84,7 +84,7 @@ def combine(array1, array2)
         if i == iterator_1
             saved_array.append(e)
             iterator_1 +=1
-            array2.each do |e, i|
+            array2.each_with_index do |e, i|
                 if i == iterator_1.to_i - 1
                     saved_array.append(e)
                 else
