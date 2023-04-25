@@ -77,4 +77,15 @@
 # Return saved new array
 
 def combine(array1, array2)
+    saved_array = []
+    iterator_1 = 0
+    iterator_2 = 0
 
+    array1.each do |e, i|
+        if i == iterator_1
+            saved_array.append(e)
+            iterator_1 +=1
+        else
+            nil
+        end
+end
