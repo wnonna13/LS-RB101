@@ -96,7 +96,7 @@ def combine(array1, array2)
         end
     end
     
-    puts saved_array
+    saved_array
 end
 
-puts combine([1, 2, 3], [4, 5, 6]) # => [1, 4, 2, 5, 3, 6]
+p combine([1, 2, 3], [4, 5, 6]) # => [1, 4, 2, 5, 3, 6]
