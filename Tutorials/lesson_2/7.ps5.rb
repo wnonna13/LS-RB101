@@ -81,6 +81,8 @@ def combine(array1, array2)
     iterator_1 = 0
 
     array1.each do |e, i|
+        puts e
+        puts i
         if i == iterator_1
             saved_array.append(e)
             iterator_1 +=1
@@ -98,3 +100,5 @@ def combine(array1, array2)
     
     puts saved_array
 end
+
+puts combine([1, 2, 3], [4, 5, 6]) # => [1, 4, 2, 5, 3, 6]
