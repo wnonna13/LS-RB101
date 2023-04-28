@@ -2,3 +2,8 @@
 
 #What does this code print?
 
+# Prediction: 
+# It will put the value of the number up to 10, but skipping by 3.
+# 5
+# 8 
+
