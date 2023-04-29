@@ -13,7 +13,17 @@
 # Return new empty string
 
 def stringy(num)
-
+    saved_string = ""
+    iterator = 0
+    while iterator <= num.to_i
+        if iterator % 2 == 0
+            saved_string += "0"
+            iterator += 1
+        else 
+            saved_string += "0"
+            iterator += 1
+        end
+    end
 end
 
 
