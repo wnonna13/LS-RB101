@@ -51,3 +51,21 @@ puts stringy2(6) == '101010'
 puts stringy2(9) == '101010101'
 puts stringy2(4) == '1010'
 puts stringy2(7) == '1010101'
+
+def stringy3(num, initial='1')
+    numbers = []
+
+    num.times do |x|
+        x = x.even? ? initial : 0
+        numbers << x
+    end
+
+    numbers.join
+end
+
+puts "***"
+
+puts stringy3(6,0) #== '101010'
+puts stringy3(9,0) #== '101010101'
+puts stringy3(4,0) #== '1010'
+puts stringy3(7,0) #== '1010101'
