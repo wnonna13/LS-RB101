@@ -15,24 +15,21 @@
 def stringy(num)
     saved_string = ""
     iterator = 0
-    while iterator <= num.to_i
+    while iterator < num.to_i
         if iterator % 2 == 0
             saved_string += "1"
-            p iterator
             iterator += 1
-            
         else 
             saved_string += "0"
-            p iterator
             iterator += 1
         end
     end
-    saved_string
+    p saved_string
 end
 
 
 
-puts stringy(6) #== '101010'
-#puts stringy(9) #== '101010101'
-#puts stringy(4) #== '1010'
-#puts stringy(7) #== '1010101'
+puts stringy(6) == '101010'
+puts stringy(9) == '101010101'
+puts stringy(4) == '1010'
+puts stringy(7) == '1010101'
