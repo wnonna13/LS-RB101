@@ -5,7 +5,7 @@
 #input = positive integer (salary), boolean (true/false)
 #output = bonus (positive integer OR 0)
 
-#Create new varibale = bonus
+#Create new variable = bonus
 # If boolean == true
     # bonus = salary / 2 
 # else 
