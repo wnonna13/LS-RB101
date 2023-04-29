@@ -11,3 +11,11 @@ end
 
 repeat('Hello', 3)
 repeat('yo', 5)
+
+
+def repeat2(str, num)
+    num.times do 
+        puts str
+    end
+
+end
