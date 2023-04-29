@@ -55,9 +55,16 @@ puts stringy2(7) == '1010101'
 def stringy3(num, initial='1')
     numbers = []
 
-    num.times do |x|
-        x = x.even? ? initial : 0
-        numbers << x
+    if initial == 0
+        num.times do |x|
+            x = x.even? ? initial : 1
+            numbers << x
+        end
+    else
+        num.times do |x|
+            x = x.even? ? initial : 0
+            numbers << x
+        end
     end
 
     numbers.join
