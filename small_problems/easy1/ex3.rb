@@ -24,7 +24,7 @@ def stringy(num)
             iterator += 1
         end
     end
-    p saved_string
+    saved_string
 end
 
 
