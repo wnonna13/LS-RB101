@@ -34,6 +34,17 @@ end
 triangle(5)
 triangle(9)
 
+
+def triangle2(num)
+  spaces = num - 1
+  stars = 1
+
+  num.times do |n|
+    puts (' ' * spaces) + ('*' * stars)
+    spaces -= 1
+    stars += 1
+  end
+end
 #    *
 #   **
 #  ***
