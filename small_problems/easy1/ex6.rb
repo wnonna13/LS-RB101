@@ -15,15 +15,17 @@
 def triangle(num)
     iterator = 1
     while iterator <= num
+        new_string = ""
         space = num - iterator
 
         space.times do |x|
-            p " "
+           new_string += " "
         end
         iterator.times do |x|
-            p "*"
+            new_string += "*"
         end
 
+        puts new_string
         iterator += 1
     end
 
