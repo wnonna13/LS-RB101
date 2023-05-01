@@ -14,6 +14,34 @@
 # 4th line = '|' + ' ' + (' '* string length) + ' ' + '|' 
 # 5th line = '+' + '-' + ('-'* string length) + '-' + '+' 
 
+def print_in_box(str)
+    line_string = ''
+    empty_string = ''
+    num = str.length
+    puts num
+
+    num.times do |x|
+        line_string << '-'
+    end
+
+    puts "hello"
+    
+    num.times do |x|
+        empty_string << " "
+    end
+
+    puts "helloooo"
+
+    puts "+-#{line_string}-+"
+    puts "| #{empty_string} |"
+    puts "| #{str} |"
+    puts "| #{empty_string} |"
+    puts "+-#{line_string}-+"
+
+    
+    
+end
+
 
 #def print_in_box(string)
 #    <<-TEXT
