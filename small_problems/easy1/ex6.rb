@@ -32,6 +32,7 @@ def triangle(num)
 end
 
 triangle(5)
+triangle(9)
 
 #    *
 #   **
