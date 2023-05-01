@@ -12,7 +12,22 @@
         # space variable = positive integer - iterator
         # puts "space variable" + "positive integer as *"
 
+def triangle(num)
+    iterator = 1
+    while iterator <= num
+        space = num - iterator
 
+        space.times do |x|
+            p " "
+        end
+        iterator.times do |x|
+            p "*"
+        end
+
+        iterator += 1
+    end
+
+end
 
 triangle(5)
 
