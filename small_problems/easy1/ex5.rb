@@ -3,17 +3,27 @@
 #Pseudocode
 
 #Input: string
-#output: string in a box
+#Output: string in a box
 
-def print_in_box(string)
-    <<-TEXT
-+--------------------------------------------+
-|                                            |
-|  #{string}                   |
-|                                            |
-+--------------------------------------------+
-    TEXT
-end
+#Method:
+# Save new variable of length = string length
+# Create 5 separate lines:
+# 1st line = '+' + '-' + ('-'* string length) + '-' + '+' 
+# 2nd line = '|' + ' ' + (' '* string length) + ' ' + '|' 
+# 3rd line = '|' + '-' + (string) + '-' + '|' 
+# 4th line = '|' + ' ' + (' '* string length) + ' ' + '|' 
+# 5th line = '+' + '-' + ('-'* string length) + '-' + '+' 
+
+
+#def print_in_box(string)
+#    <<-TEXT
+#+--------------------------------------------+
+#|                                            |
+#|  #{string}                   |
+#|                                            |
+#+--------------------------------------------+
+#    TEXT
+#end
 
 
 
