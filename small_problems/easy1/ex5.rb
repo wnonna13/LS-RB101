@@ -18,19 +18,14 @@ def print_in_box(str)
     line_string = ''
     empty_string = ''
     num = str.length
-    puts num
 
     num.times do |x|
         line_string << '-'
     end
-
-    puts "hello"
     
     num.times do |x|
         empty_string << " "
     end
-
-    puts "helloooo"
 
     puts "+-#{line_string}-+"
     puts "| #{empty_string} |"
@@ -56,6 +51,8 @@ end
 
 
 puts print_in_box('To boldly go where no one has gone before.')
+puts print_in_box("I'm a genie in a bottle, baby")
+
 
 #Example:
 #+--------------------------------------------+
