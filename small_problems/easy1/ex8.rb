@@ -19,6 +19,19 @@
 # Use template literals to save noun, verb, adj, and adverb to message
 # Return message
 
+puts "Welcome to the Mad Libs creator!"
+puts "Please enter a noun:"
+noun = gets.chomp
+is_valid = false
+while is_valid == false
+    if noun.is_a? String 
+        is_valid = true
+    else
+        is_valid = false
+end
+
+
+
 
 
 #EXAMPLE
