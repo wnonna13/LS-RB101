@@ -22,15 +22,20 @@
 puts "Welcome to the Mad Libs creator!"
 puts "Please enter a noun:"
 noun = gets.chomp
-is_valid = false
-while is_valid == false
-    if noun.is_a? String 
-        is_valid = true
-    else
-        is_valid = false
+def get_input(str)
+    puts "Please enter a #{str}:"
+    is_valid = false
+    while is_valid == false
+        input = gets.chomp
+        if input.is_a? String 
+            puts "Thank you, you entered: #{input}"
+            is_valid = true
+        else
+            puts "Sorry, that is invalid."
+            is_valid = false
+    end
+
 end
-
-
 
 
 
