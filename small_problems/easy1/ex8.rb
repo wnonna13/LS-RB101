@@ -20,8 +20,8 @@
 # Return message
 
 puts "Welcome to the Mad Libs creator!"
-puts "Please enter a noun:"
-noun = gets.chomp
+#puts "Please enter a noun:"
+#noun = gets.chomp
 def get_input(str)
     puts "Please enter a #{str}:"
     is_valid = false
@@ -33,9 +33,11 @@ def get_input(str)
         else
             puts "Sorry, that is invalid."
             is_valid = false
+        end
     end
-
 end
+
+puts get_input("noun")
 
 
 
