@@ -20,13 +20,14 @@
 
 def center_of(str)
     output = ""
-    if str.length % 2 == 0
-        first = (str.length / 2) - 1
-        second = (str.length /2)
-        output += first += second
+    length = str.length.to_i
+    if length % 2 == 0
+        first = length / 2 - 1
+        second = length /2
+        puts first
+        puts second
     else
-        first = (str.length / 2) - 0.5
-        output += first
+        first = length / 2 - 0.5
     end
     output
 end
