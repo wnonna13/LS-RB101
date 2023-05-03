@@ -48,10 +48,9 @@ adj = get_input("adjective")
 adv = get_input("adverb")
 
 
-puts noun 
-puts verb
-puts adj
-puts adv
+story = "Do you #{verb} your #{adj} #{noun} #{adv}? That's hilarious!"
+
+puts story
 
 
 #EXAMPLE
