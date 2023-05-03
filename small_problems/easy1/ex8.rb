@@ -28,7 +28,7 @@ def get_input(str)
     is_valid = false
     while is_valid == false
         input = gets.chomp.to_s
-        if %w(1 2 3 4 5 6 7 8 9).any? { |s| input.include? s}
+        if %w(1 2 3 4 5 6 7 8 9).any? { |s| input.include? s} == false
             puts "Thank you, you entered: #{input}"
             is_valid = true
         else
