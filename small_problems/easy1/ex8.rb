@@ -48,6 +48,11 @@ adj = get_input("adjective")
 adv = get_input("adverb")
 
 
+puts noun 
+puts verb
+puts adj
+puts adv
+
 
 #EXAMPLE
 #Enter a noun: dog
