@@ -26,7 +26,8 @@ def center_of(str)
         second = length /2
         output = "#{str[first.to_i]}#{str[second.to_i]}"
     else
-        first = length / 2 - 0.5
+        first = length / 2 + 0.5
+        output = "#{str[first.to_i]}"
     end
     output
 end
