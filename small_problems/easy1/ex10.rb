@@ -4,6 +4,23 @@
 #Input = string
 #Output = one (if string has odd length) OR two characters (if string has even length)
 
+#METHOD
+# Get length of input
+# Create new variable to save output
+# Do if statement
+    # If length == even
+        # first new variable = (length / 2) - 1 
+        # output += input [first new variable]
+        # second new variable = length / 2
+        # output += input [second new variable]
+    # If length != even
+        # new variable = (length / 2) - 0.5
+        # output += input [new variable]
+# Return output
+
+
+
+
 center_of('I love ruby') == 'e'
 center_of('Launch School') == ' '
 center_of('Launch') == 'un'
