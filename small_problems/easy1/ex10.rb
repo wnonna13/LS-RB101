@@ -18,11 +18,23 @@
         # output += input [new variable]
 # Return output
 
+def center_of(str)
+    output = ""
+    if str.length % 2 == 0
+        first = (str.length / 2) - 1
+        second = (str.length /2)
+        output += first += second
+    else
+        first = (str.length / 2) - 0.5
+        output += first
+    end
+    output
+end
 
 
 
-center_of('I love ruby') == 'e'
-center_of('Launch School') == ' '
-center_of('Launch') == 'un'
-center_of('Launchschool') == 'hs'
-center_of('x') == 'x'
+puts center_of('I love ruby') #== 'e'
+puts center_of('Launch School') #== ' '
+puts center_of('Launch') #== 'un'
+puts center_of('Launchschool') #== 'hs'
+puts center_of('x') #== 'x'
