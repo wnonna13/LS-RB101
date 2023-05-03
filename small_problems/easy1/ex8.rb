@@ -38,7 +38,9 @@ def get_input(str)
     end
 end
 
-puts get_input("noun")
+noun = get_input("noun")
+
+verb = get_input("verb")
 
 
 
