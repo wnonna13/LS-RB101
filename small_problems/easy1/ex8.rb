@@ -36,11 +36,16 @@ def get_input(str)
             is_valid = false
         end
     end
+    input
 end
 
 noun = get_input("noun")
 
 verb = get_input("verb")
+
+adj = get_input("adjective")
+
+adv = get_input("adverb")
 
 
 
