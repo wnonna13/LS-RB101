@@ -12,9 +12,20 @@
     # Add this variable to the empty string
 # Return saved string
 
-reversed_number(12345) == 54321
-reversed_number(12213) == 31221
-reversed_number(456) == 654
-reversed_number(12000) == 21 # No leading zeros in return value!
-reversed_number(12003) == 30021
-reversed_number(1) == 1
+def reversed_number(num)
+    saved_num = ""
+    num = num.to_s
+
+    num.each_char.with_index do |e, i|
+        current = num.length - (i+1)
+        saved_num += num[current].to_s
+    end
+    saved_num
+end
+
+puts reversed_number(12345) #== 54321
+#puts reversed_number(12213)# == 31221
+#puts reversed_number(456)# == 654
+#puts reversed_number(12000)# == 21 # No leading zeros in return value!
+#puts reversed_number(12003)# == 30021
+#puts reversed_number(1)# == 1
