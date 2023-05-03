@@ -23,11 +23,12 @@ puts "Welcome to the Mad Libs creator!"
 #puts "Please enter a noun:"
 #noun = gets.chomp
 def get_input(str)
+    invalid = [1, 2, 3, 4, 5, 6, 7, 8, 9, "!", "#", ",", ".", "?"]
     puts "Please enter a #{str}:"
     is_valid = false
     while is_valid == false
-        input = gets.chomp
-        if input.is_a? String 
+        input = gets.chomp.to_s
+        if %w(1 2 3 4 5 6 7 8 9).any? { |s| input.include? s}
             puts "Thank you, you entered: #{input}"
             is_valid = true
         else
