@@ -29,3 +29,9 @@ puts reversed_number(456)# == 654
 puts reversed_number(12000)# == 21 # No leading zeros in return value!
 puts reversed_number(12003)# == 30021
 puts reversed_number(1)# == 1
+
+def reversed_number2(number)
+  string = number.to_s
+  reversed_string = string.reverse
+  reversed_string.to_i
+end
