@@ -8,6 +8,9 @@
 # save age variable as a random number between 20 and 200
 # return message
 
+#QUESTION? 
+# Is it inclusive between 20 and 200?
+    # --> Assuming yes. 
 
 
 #Teddy is 69 years old!
