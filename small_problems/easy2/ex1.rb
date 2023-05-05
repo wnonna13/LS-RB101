@@ -14,3 +14,10 @@
 
 
 #Teddy is 69 years old!
+
+def say_age
+    number = rand(20..200)
+    message = "Teddy is #{number} years old!"
+end
+
+puts say_age
