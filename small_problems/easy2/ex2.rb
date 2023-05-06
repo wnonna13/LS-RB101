@@ -36,10 +36,7 @@ def get_input(str)
 end 
 
 def get_area(value1, value2)
-    puts value1
-    puts value2
     area_meters = value1.to_i * value2.to_i
-    puts area_meters
     area_feet = area_meters.to_f / 10.76
     mesasge = "The area of the room is #{area_meters.to_f.round(2)} square meters (#{area_feet.round(2)} square feet)."
 end
