@@ -23,8 +23,8 @@ def get_input(str)
     puts "Please enter a positive number for the #{str}"
     isActive = false
     while isActive == false
-        input = gets.chomp
-        if input.is_a? String
+        input = gets.chomp.to_i
+        if w%("a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z") .any? { |x| input.include? x} == true
             puts "Yahoo"
             isActive = true
         else 
