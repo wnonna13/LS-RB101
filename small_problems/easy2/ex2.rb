@@ -35,7 +35,9 @@ def get_input(str)
     puts input
 end 
 
-get_input("length")
+length = get_input("length")
+width = get_input("width")
+
 
 #Enter the length of the room in meters:
 #10
