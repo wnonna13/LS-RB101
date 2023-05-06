@@ -38,6 +38,11 @@ end
 length = get_input("length")
 width = get_input("width")
 
+def get_area(value1, value2)
+    area_meters = value1.to_i * value2.to_i
+    area_feet = area_meters.to_f / 10.76
+    mesasge = "The area of the room is #{area_meters.to_f} square meters (#{area_feet} square feet)."
+end
 
 #Enter the length of the room in meters:
 #10
