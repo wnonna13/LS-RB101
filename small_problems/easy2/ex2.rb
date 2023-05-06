@@ -19,6 +19,24 @@
 # Convert to feet (1 sq m = 10.76 sq feet)
 # Return message containing meters and feet
 
+def get_input(str)
+    puts "Please enter a positive number for the #{str}"
+    isActive = false
+    while isActive == false
+        input = gets.chomp
+        if input.is_a? String
+            puts "Yahoo"
+            isActive = true
+        else 
+            puts "Ok"
+            isActive = false
+        end
+    end
+    puts input
+end 
+
+get_input("length")
+
 #Enter the length of the room in meters:
 #10
 #Enter the width of the room in meters:
