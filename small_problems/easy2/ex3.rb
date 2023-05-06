@@ -33,9 +33,9 @@ def get_input
         else
             puts "Thank you. You entered #{input}. Is this correct?"
             puts "Yes or No?"
-            verify = gets.chomp.downcase
             isVerified = false
             while isVerified == false
+                verify = gets.chomp.downcase
                 if verify == 'y' || verify == 'yes'
                     puts "Thank you!"
                     isActive = true
