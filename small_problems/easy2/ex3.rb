@@ -21,6 +21,40 @@
     # The total is : $total 
 # Return message 
 
+def get_input
+    puts "Please enter a number"
+    isActive = false
+    while isActive == false
+        input = gets.chomp
+        if input %w(a b c d e f g h i j k l m n o p q r s t u v w x y z).any? { |x| input.include? x}
+            puts "Sorry, please input only numbers."
+            isActive = false
+        else
+            puts "Thank you. You entered #{input}. Is this correct?"
+            puts "Yes or No?"
+            verify = gets.chomp.downcase
+            isVerified = false
+            while isVerified == false
+                if verify == 'y' || verify == 'yes'
+                    puts "Thank you!"
+                    isActive = true
+                    isVerified = true
+                elsif verify == 'n' || verify == 'no'
+                    puts "I see. Please input the correct number then."
+                    isActive = false
+                    isVerified = true
+                else 
+                    puts "Sorry. I don't understand. Please input yes or no."
+                    isVerified = false
+                end
+            end
+        end  
+    end
+end
+
+get_input
+
+
 #What is the bill? 200
 #What is the tip percentage? 15
 
