@@ -25,11 +25,11 @@ def get_input(str)
     while isActive == false
         input = gets.chomp.to_i
         if w%("a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z") .any? { |x| input.include? x} == true
-            puts "Yahoo"
-            isActive = true
+            puts "Sorry, that is invalid"
+            isActive = fale
         else 
             puts "Ok"
-            isActive = false
+            isActive = true
         end
     end
     puts input
