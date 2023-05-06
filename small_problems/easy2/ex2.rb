@@ -41,16 +41,11 @@ def get_area(value1, value2)
     area_meters = value1.to_i * value2.to_i
     puts area_meters
     area_feet = area_meters.to_f / 10.76
-    mesasge = "The area of the room is #{area_meters.to_f} square meters (#{area_feet} square feet)."
+    mesasge = "The area of the room is #{area_meters.to_f.round(2)} square meters (#{area_feet.round(2)} square feet)."
 end
 
 length = get_input("length")
 width = get_input("width")
-
-puts "***"
-
-puts length 
-puts width
 
 p get_area(length, width)
 
