@@ -28,7 +28,7 @@ def get_input(str)
             puts "Sorry, that is invalid"
             isActive = false
         else 
-            puts "Ok"
+            puts "Thank you! You entered #{input}"
             isActive = true
         end
     end
