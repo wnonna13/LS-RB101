@@ -53,7 +53,8 @@ def get_input(str)
     end
 end
 
-get_input
+bill = get_input("bill")
+tip_percentage = get_input("tip percentage")
 
 
 #What is the bill? 200
