@@ -54,10 +54,16 @@ def get_input(str)
     input
 end
 
+def calculate_tip(bill, perc)
+    tip_amount = perc.to_i * bill.to_i / 100
+end
+
 
 
 bill = get_input("bill")
 tip_percentage = get_input("tip percentage")
+
+p calculate_tip(bill, tip_percentage)
 
 
 
