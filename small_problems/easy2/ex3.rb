@@ -56,6 +56,8 @@ end
 
 def calculate_tip(bill, perc)
     tip_amount = perc.to_i * bill.to_i / 100
+    total_bill = tip_amount + bill
+    "With a tip percentage of #{perc} and a bill of #{bill}, the amount of tip needed to pay is #{tip_amount}. The total bill to be paid is #{total_bill}."
 end
 
 
