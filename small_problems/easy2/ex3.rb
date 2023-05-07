@@ -22,7 +22,7 @@
 # Return message 
 
 def get_input(str)
-    puts "Please enter the #{str} amount (numbers only please)"
+    puts "Please enter the amount for the #{str} (numbers only please)"
     isActive = false
     while isActive == false
         input = gets.chomp
@@ -51,10 +51,15 @@ def get_input(str)
             end
         end  
     end
+    input
 end
+
+
 
 bill = get_input("bill")
 tip_percentage = get_input("tip percentage")
+
+
 
 
 #What is the bill? 200
