@@ -21,8 +21,8 @@
     # The total is : $total 
 # Return message 
 
-def get_input
-    puts "Please enter a number"
+def get_input(str)
+    puts "Please enter the #{str} amount (numbers only please)"
     isActive = false
     while isActive == false
         input = gets.chomp
