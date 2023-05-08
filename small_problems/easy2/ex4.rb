@@ -32,15 +32,32 @@
 
 def get_input(str)
     puts "Please enter the #{str}. Please only enter numbers."
-    input = gets.chomp.to_i
     isValid = false
     while isValid == false
+        input = gets.chomp.to_i
         if %w(a b c d e f g h i j k l m n o p q r s t u v w x y z).any { |x| input.include? x}
             puts "Sorry, that is invalid."
             isValid = false
-         else
+        else
             puts "Thank you, you entered: #{input} years. Is this correct? Yes or No?"
+            choice = gets.chomp
+            isCorrect = false
+            while isCorrect == false
+                if choice == 'yes' || choice == 'y'
+                    puts "Thank you!"
+                    isCorrect = true
+                    isValid = true
+                elsif choice == 'no' || choice == 'n'
+                    puts "Ok, then."
+                    isCorrect = true
+                    isValid = false
+                else 
+                    puts "Sorry, I don't understand.Please enter Yes or No."
+                    isCorrect = false
+                end
+            end
         end
+
     end
 
 end
