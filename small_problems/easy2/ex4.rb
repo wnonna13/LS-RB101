@@ -30,3 +30,18 @@
 # Create new variable "year retire" = year current + year diff
 # Return message 
 
+def get_input(str)
+    puts "Please enter the #{str}. Please only enter numbers."
+    input = gets.chomp.to_i
+    isValid = false
+    while isValid == false
+        if %w(a b c d e f g h i j k l m n o p q r s t u v w x y z).any { |x| input.include? x}
+            puts "Sorry, that is invalid."
+            isValid = false
+         else
+            puts "Thank you, you entered: #{input} years. Is this correct? Yes or No?"
+        end
+    end
+
+end
+
