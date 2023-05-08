@@ -7,3 +7,18 @@
 
 #It's 2016. You will retire in 2056.
 #You have only 40 years of work to go!
+
+# PSEUDOCODE 
+# Input = age current, age retire
+# Output = year current, year retire, year diff
+
+# METHOD
+# Get age current input 
+    # Validate if age is an integer
+        #If yes, proceed
+            # Ask, is this correct?
+                # If yes, proceed
+                # If no, loop to "Get age input"
+        #If no, loop to "Get age input"
+
+# Repeat with age to retire
