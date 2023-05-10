@@ -67,6 +67,12 @@ def get_current_year
     current_year = time.strftime("%Y")
 end
 
-puts get_input("your current age")
-puts get_input("your intended retirement age")
-puts get_current_year
+def retire_year(year, current_age, retire_age)
+    year_diff = retire_age.to_i - current_age.to_i
+    retire_year = year.to_i + year_diff
+end
+
+current_age = get_current_year("your current age")
+retire_age = get_current_year("your intended retirement age")
+current_year = get_current_year
+retire_year = retire_year(current_year, retire_age)
