@@ -62,5 +62,11 @@ def get_input(str)
     input
 end
 
+def get_current_year
+    time = Time.new()
+    current_year = time.strftime("%Y")
+end
+
 puts get_input("your current age")
 puts get_input("your intended retirement age")
+puts get_current_year
