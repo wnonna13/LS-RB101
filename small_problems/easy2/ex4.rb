@@ -31,7 +31,7 @@
 # Return message 
 
 def get_input(str)
-    puts "Please enter the #{str}. Please only enter numbers."
+    puts "Please enter #{str}. Please only enter numbers."
     isValid = false
     while isValid == false
         input = gets.chomp
@@ -48,7 +48,7 @@ def get_input(str)
                     isCorrect = true
                     isValid = true
                 elsif choice == 'no' || choice == 'n'
-                    puts "Ok, then. Please enter the correct #{str}."
+                    puts "Ok, then. Please enter #{str}."
                     isCorrect = true
                     isValid = false
                 else 
@@ -62,5 +62,5 @@ def get_input(str)
     input
 end
 
-puts get_input("current age")
-puts get_input("intended retirement age")
+puts get_input("your current age")
+puts get_input("your intended retirement age")
