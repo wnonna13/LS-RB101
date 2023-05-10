@@ -7,3 +7,19 @@
 
 #What is your name? Bob!
 #HELLO BOB. WHY ARE WE SCREAMING?
+
+#PSEUDOCODE
+#input = name (in capitals or not)
+# output = message (in capitals or not)
+
+# METHOD
+# Get name from input 
+    # If name is capitalized 
+        # Output message in capitals
+    # If lowercase
+        # Output message in lowercase
+    # If titled
+        # Output message in titled
+    # If with symbols or numbers
+        # Output with symbols and numbers
+# Return message
