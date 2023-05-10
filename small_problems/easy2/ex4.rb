@@ -72,7 +72,7 @@ def retire_year(year, current_age, retire_age)
     retire_year = year.to_i + year_diff
 end
 
-current_age = get_current_year("your current age")
-retire_age = get_current_year("your intended retirement age")
+current_age = get_input("your current age")
+retire_age = get_input("your intended retirement age")
 current_year = get_current_year
-retire_year = retire_year(current_year, retire_age)
+retire_year = retire_year(current_year, current_age, retire_age)
