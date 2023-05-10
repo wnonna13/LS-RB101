@@ -35,7 +35,7 @@ def get_input(str)
     isValid = false
     while isValid == false
         input = gets.chomp
-        if %w(a b c d e f g h i j k l m n o p q r s t u v w x y z).any? { |x| input.include? x}
+        if %w(a b c d e f g h i j k l m n o p q r s t u v w x y z).any? { |x| input.include? x} or input.to_s.length > 2 or input.to_s.length == 0
             puts "Sorry, that is invalid."
             isValid = false
         else
