@@ -25,13 +25,12 @@
 # Return message
 
 def get_name
+    puts "Please enter your name:"
     input = gets.chomp
-    if input.downcase
-        puts "hello #{input}, what's up"
-    elsif input.upcase
-        puts "HELLO #{input}, WHAT'S UP?"
-    elsif input.includes? "!"
+    if input.include? "!"
         puts "Hello #{input}, WHY ARE WE SCREAMING?"
+    elsif 
+        puts "Hello #{input}, what's up?"
     end
 end
 
