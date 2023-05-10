@@ -62,4 +62,5 @@ def get_input(str)
     input
 end
 
-puts get_input("current year")
+puts get_input("current age")
+puts get_input("intended retirement age")
