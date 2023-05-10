@@ -76,5 +76,7 @@ current_age = get_input("your current age")
 retire_age = get_input("your intended retirement age")
 current_year = get_current_year
 retire_year = retire_year(current_year, current_age, retire_age)
-puts current_year
-puts retire_year
+
+message = "If your current age is #{current_age} and you want to retire when you are #{retire_age}, it will take #{retire_age.to_i - current_age.to_i} years. If the current year is #{current_year}, then you will retire in #{retire_year}."
+
+puts message
