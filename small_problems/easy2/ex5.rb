@@ -29,6 +29,8 @@ def get_name
     input = gets.chomp
     if input.include? "!" or input == input.upcase
         puts "HELLO #{input}! WHY ARE WE SCREAMING?"
+    elsif %w(1 2 3 4 5 6 7 8 9 $ % & * / + -).any? { |x| input.include? x}
+        puts "H3ll0 #{input}! Wh4t'$ up?"
     elsif input == input.downcase
         puts "hello #{input}. what's up"
     elsif 
