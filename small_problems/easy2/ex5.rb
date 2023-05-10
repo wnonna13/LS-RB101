@@ -27,8 +27,10 @@
 def get_name
     puts "Please enter your name:"
     input = gets.chomp
-    if input.include? "!"
+    if input.include? "!" or input == input.upcase
         puts "Hello #{input}, WHY ARE WE SCREAMING?"
+    elsif input == input.downcase
+        puts "hello #{input}, what's up"
     elsif 
         puts "Hello #{input}, what's up?"
     end
