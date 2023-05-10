@@ -76,3 +76,5 @@ current_age = get_input("your current age")
 retire_age = get_input("your intended retirement age")
 current_year = get_current_year
 retire_year = retire_year(current_year, current_age, retire_age)
+puts current_year
+puts retire_year
