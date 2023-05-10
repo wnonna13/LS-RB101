@@ -40,19 +40,19 @@ def get_input(str)
             isValid = false
         else
             puts "Thank you, you entered: #{input} years. Is this correct? Yes or No?"
-            choice = gets.chomp
             isCorrect = false
             while isCorrect == false
+                choice = gets.chomp
                 if choice == 'yes' || choice == 'y'
                     puts "Thank you!"
                     isCorrect = true
                     isValid = true
                 elsif choice == 'no' || choice == 'n'
-                    puts "Ok, then. Please enter the correct #{str}"
+                    puts "Ok, then. Please enter the correct #{str}."
                     isCorrect = true
                     isValid = false
                 else 
-                    puts "Sorry, I don't understand.Please enter Yes or No."
+                    puts "Sorry, I don't understand. Please enter Yes or No."
                     isCorrect = false
                 end
             end
