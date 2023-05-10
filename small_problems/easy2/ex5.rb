@@ -26,4 +26,13 @@
 
 def get_name
     input = gets.chomp
+    if input.downcase
+        puts "hello #{input}, what's up"
+    elsif input.upcase
+        puts "HELLO #{input}, WHAT'S UP?"
+    elsif input.includes? "!"
+        puts "Hello #{input}, WHY ARE WE SCREAMING?"
+    end
 end
+
+puts get_name
