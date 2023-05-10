@@ -23,3 +23,7 @@
     # If with symbols or numbers
         # Output with symbols and numbers
 # Return message
+
+def get_name
+    input = gets.chomp
+end
