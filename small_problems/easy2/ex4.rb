@@ -34,8 +34,8 @@ def get_input(str)
     puts "Please enter the #{str}. Please only enter numbers."
     isValid = false
     while isValid == false
-        input = gets.chomp.to_i
-        if %w(a b c d e f g h i j k l m n o p q r s t u v w x y z).any { |x| input.include? x}
+        input = gets.chomp
+        if %w(a b c d e f g h i j k l m n o p q r s t u v w x y z).any? { |x| input.include? x}
             puts "Sorry, that is invalid."
             isValid = false
         else
@@ -48,7 +48,7 @@ def get_input(str)
                     isCorrect = true
                     isValid = true
                 elsif choice == 'no' || choice == 'n'
-                    puts "Ok, then."
+                    puts "Ok, then. Please enter the correct #{str}"
                     isCorrect = true
                     isValid = false
                 else 
@@ -59,6 +59,7 @@ def get_input(str)
         end
 
     end
-
+    input
 end
 
+puts get_input("current year")
