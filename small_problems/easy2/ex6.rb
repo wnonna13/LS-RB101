@@ -12,3 +12,10 @@
         # Else
             # pass
         
+def get_odd
+    (1..99).each do |x|
+        puts x % 2 != 0 ? x : nil
+    end
+end
+
+get_odd
