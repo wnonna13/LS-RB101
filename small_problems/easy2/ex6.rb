@@ -14,7 +14,7 @@
         
 def get_odd
     (1..99).each do |x|
-         puts x % 2 != 0 ? x : nil
+          % 2 != 0 ? (puts x) : (puts nil)
     end
 end
 
