@@ -30,3 +30,12 @@
     # Add all the sum of integers from range (1..s)
 # Method 3: If p
     # Add all the products of integers from range (1..p)
+
+
+def get_input
+    puts "Please enter an integer greater than 0"
+    input = gets.chomp.to_i
+    if input == 0 
+        puts "Sorry, please input another number that is not 0"
+    end
+end
