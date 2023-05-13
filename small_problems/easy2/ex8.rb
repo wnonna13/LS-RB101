@@ -12,3 +12,7 @@
 #>> Enter 's' to compute the sum, 'p' to compute the product.
 #p
 #The product of the integers between 1 and 6 is 720.
+
+#PSEUDOCODE
+#input =  integer greater than 0, s or p
+#output = sum or product
