@@ -36,10 +36,10 @@ def get_input
     puts "Please enter an integer greater than 0"
     is_valid = false
     while is_valid == false
-    input = gets.chomp.to_i
-        if input == 0 
+    input = gets.chomp
+        if input.to_s == "0"
             puts "Sorry, please input another number that is not 0"
-        elsif input < 0
+        elsif input.to_i < 0
             puts "Sorry, please put a positive number"
         elsif %w(a b c d e f g h i j k l m n o p q r s t u v w x y z).any? { |x| input.include? x}
             puts "Sorry that is not a number"
@@ -49,3 +49,5 @@ def get_input
         end
     end
 end
+
+get_input
