@@ -38,11 +38,11 @@ def get_input
     while is_valid == false
     input = gets.chomp
         if input.to_s == "0"
-            puts "Sorry, please input another number that is not 0"
+            puts "ERROR! Please input another number that is not 0."
         elsif input.to_i < 0
-            puts "Sorry, please put a positive number"
+            puts "ERROR! Please put a positive number!"
         elsif %w(a b c d e f g h i j k l m n o p q r s t u v w x y z).any? { |x| input.include? x}
-            puts "Sorry that is not a number"
+            puts "ERROR! That is not a numbe!"
         else
             puts "Thank you!"
             is_valid = true 
