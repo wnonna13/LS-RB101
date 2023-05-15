@@ -63,7 +63,7 @@ end
 def get_p(num)
     accumulator = 1
     sum = 1
-    while accumulator <= (num + 1)
+    while accumulator <= num
         sum *= accumulator
         accumulator += 1
         puts sum
