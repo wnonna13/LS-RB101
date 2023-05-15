@@ -77,6 +77,8 @@ Please choose one of the following:
     s - Gets the sum of all numbers up to a given integer
     p - Gets the product of all numbers up to a given integer
 
+Please enter s or p.
+
 "
 
 #get_input
