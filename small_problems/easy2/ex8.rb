@@ -50,4 +50,17 @@ def get_input
     end
 end
 
-get_input
+def get_s(num)
+    accumulator = 0
+    sum = 0
+    while accumulator < num
+        sum += accumulator
+        accumulator +=1
+        puts sum
+    end
+end
+
+
+#get_input
+
+get_s(5)
