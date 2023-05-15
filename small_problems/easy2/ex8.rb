@@ -70,8 +70,19 @@ def get_p(num)
     end
 end
 
+message = "
+Welcome to the Sum Product Calculator.
+
+Please choose one of the following:
+    s - Gets the sum of all numbers up to a given integer
+    p - Gets the product of all numbers up to a given integer
+
+"
+
 #get_input
 
 #get_s(5)
 
-get_p(5)
+#get_p(5)
+
+puts message
