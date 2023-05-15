@@ -73,21 +73,21 @@ def get_p(num)
     sum
 end
 
-def get_s_or_p(num)
-    result = 0
-    is_valid = false
-    while is_valid == false
-    input = gets.chomp
-        if input.to_s.downcase == 's'
-            result = get_s(num)
-            puts result
-        elsif input.to_s.downcase == 'p'
-            result = get_p(num)
-            puts result
-        end
-    end
-    result
-end
+#def get_s_or_p(num)
+#    result = 0
+#    is_valid = false
+#    while is_valid == false
+#    input = gets.chomp
+#        if input.to_s.downcase == 's'
+#            result = get_s(num)
+#            puts result
+#        elsif input.to_s.downcase == 'p'
+#            result = get_p(num)
+#            puts result
+#        end
+#    end
+#    result
+#end
 
 message = "
 Welcome to the Sum Product Calculator.
@@ -103,4 +103,13 @@ number = get_input
 
 puts message
 
-puts get_s_or_p(number)
+
+
+s_or_p = gets.chomp.downcase
+if s_or_p == 's'
+    get_s(number)
+elsif s_or_p == 'p'
+    get_p(number)
+end
+
+
