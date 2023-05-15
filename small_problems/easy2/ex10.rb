@@ -34,10 +34,16 @@ def validated_num
 end
 
 def negative(number)
-    nil
+    if number.to_i == 0 || number.to_i < 0
+        number
+    elsif 
+        number - (number * 2)
+    end
 end
 
 puts validated_num
+
+#puts negative(10)
 
 #negative(5) == -5
 #negative(-3) == -3
