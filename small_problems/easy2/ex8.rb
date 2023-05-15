@@ -60,6 +60,10 @@ def get_s(num)
     end
 end
 
+def get_p(num)
+    accumulator = 0
+    sum = 0
+end
 
 #get_input
 
