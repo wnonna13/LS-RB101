@@ -3,3 +3,9 @@
 negative(5) == -5
 negative(-3) == -3
 negative(0) == 0      # There's no such thing as -0 in ruby
+
+#Pseudocode
+# input = number
+# output = number
+    # if number is positive return negative, 
+    # if number is 0 or negative, return original number
