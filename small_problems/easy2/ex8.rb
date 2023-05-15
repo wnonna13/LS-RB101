@@ -67,6 +67,7 @@ def get_p(num)
         sum *= accumulator
         accumulator += 1
         puts sum
+    end
 end
 
 #get_input
