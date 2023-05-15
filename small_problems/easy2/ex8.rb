@@ -61,10 +61,16 @@ def get_s(num)
 end
 
 def get_p(num)
-    accumulator = 0
-    sum = 0
+    accumulator = 1
+    sum = 1
+    while accumulator <= (num + 1)
+        sum *= accumulator
+        accumulator += 1
+        puts sum
 end
 
 #get_input
 
-get_s(5)
+#get_s(5)
+
+get_p(5)
