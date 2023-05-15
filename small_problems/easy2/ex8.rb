@@ -48,21 +48,10 @@ def get_input
             is_valid = true 
         end
     end
+    input
 end
 
-def get_s_or_p(num)
-    result = 0
-    is_valid = false
-    while is_valid == false
-    input = gets.chomp
-        if input.to_s.downcase == 's'
-            result = get_s(num)
-        elsif input.to_s.downcase == 'p'
-            result = get_p(num)
-        end
-    end
-    result
-end
+
 
 def get_s(num)
     accumulator = 0
@@ -70,7 +59,6 @@ def get_s(num)
     while accumulator <= num
         sum += accumulator
         accumulator +=1
-        puts sum
     end
     sum
 end
@@ -81,9 +69,24 @@ def get_p(num)
     while accumulator <= num
         sum *= accumulator
         accumulator += 1
-        puts sum
     end
     sum
+end
+
+def get_s_or_p(num)
+    result = 0
+    is_valid = false
+    while is_valid == false
+    input = gets.chomp
+        if input.to_s.downcase == 's'
+            result = get_s(num)
+            puts result
+        elsif input.to_s.downcase == 'p'
+            result = get_p(num)
+            puts result
+        end
+    end
+    result
 end
 
 message = "
@@ -94,13 +97,10 @@ Please choose one of the following:
     p - Gets the product of all numbers up to a given integer
 
 Please enter s or p.
-
 "
 
-#get_input
-
-#get_s(5)
-
-#get_p(5)
+number = get_input
 
 puts message
+
+puts get_s_or_p(number)
