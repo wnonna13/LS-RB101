@@ -56,7 +56,7 @@ end
 def get_s(num)
     accumulator = 0
     sum = 0
-    while accumulator <= num
+    while accumulator <= num.to_i
         sum += accumulator
         accumulator +=1
     end
@@ -66,7 +66,7 @@ end
 def get_p(num)
     accumulator = 1
     sum = 1
-    while accumulator <= num
+    while accumulator <= num.to_i
         sum *= accumulator
         accumulator += 1
     end
@@ -107,9 +107,9 @@ puts message
 
 s_or_p = gets.chomp.downcase
 if s_or_p == 's'
-    get_s(number)
+    puts get_s(number)
 elsif s_or_p == 'p'
-    get_p(number)
+    puts get_p(number)
 end
 
 
