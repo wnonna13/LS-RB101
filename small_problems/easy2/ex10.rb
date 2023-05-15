@@ -23,14 +23,22 @@ def validated_num
     puts "Please enter a number."
     while is_valid == false
         number = gets.chomp
+        if %w(a b c d e f g h i j k l m n o p q r s t u v w x y z).any? { |x| number.include? x }
+            puts "Sorry, that is invalid"
+        else 
+            puts "Thank you!"
+            is_valid = true
+        end
     end
-
+    number
 end
 
 def negative(number)
     nil
 end
 
-negative(5) == -5
-negative(-3) == -3
-negative(0) == 0      # There's no such thing as -0 in ruby
+puts validated_num
+
+#negative(5) == -5
+#negative(-3) == -3
+#negative(0) == 0      # There's no such thing as -0 in ruby
