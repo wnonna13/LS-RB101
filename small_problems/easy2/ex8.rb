@@ -50,6 +50,20 @@ def get_input
     end
 end
 
+def get_s_or_p(num)
+    result = 0
+    is_valid = false
+    while is_valid == false
+    input = gets.chomp
+        if input.to_s.downcase == 's'
+            result = get_s(num)
+        elsif input.to_s.downcase == 'p'
+            result = get_p(num)
+        end
+    end
+    result
+end
+
 def get_s(num)
     accumulator = 0
     sum = 0
@@ -58,6 +72,7 @@ def get_s(num)
         accumulator +=1
         puts sum
     end
+    sum
 end
 
 def get_p(num)
@@ -68,6 +83,7 @@ def get_p(num)
         accumulator += 1
         puts sum
     end
+    sum
 end
 
 message = "
