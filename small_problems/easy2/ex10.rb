@@ -17,3 +17,10 @@ negative(0) == 0      # There's no such thing as -0 in ruby
             # If number is (-) or 0, return number
             # Elsif number is (+), return negative
 # Return number
+
+puts "Please enter a number."
+number = gets.chomp
+
+def negative(number)
+    nil
+end
