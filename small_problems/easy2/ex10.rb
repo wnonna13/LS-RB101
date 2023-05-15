@@ -9,3 +9,11 @@ negative(0) == 0      # There's no such thing as -0 in ruby
 # output = number
     # if number is positive return negative, 
     # if number is 0 or negative, return original number
+
+# METHOD
+# Get input from user
+    # Validate it is a number
+        # If number is number, proceed
+            # If number is (-) or 0, return number
+            # Elsif number is (+), return negative
+# Return number
