@@ -25,7 +25,7 @@ def validated_num
         number = gets.chomp
         if %w(a b c d e f g h i j k l m n o p q r s t u v w x y z).any? { |x| number.include? x }
             puts "Sorry, that is invalid"
-        else 
+        else
             puts "Thank you!"
             is_valid = true
         end
@@ -35,13 +35,15 @@ end
 
 def negative(number)
     if number.to_i == 0 || number.to_i < 0
-        number
+        result = number
     elsif 
-        number - (number * 2)
+        result = number.to_i - (number.to_i * 2)
     end
+    result
 end
 
-puts validated_num
+input =  validated_num
+puts negative(input)
 
 #puts negative(10)
 
