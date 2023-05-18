@@ -37,7 +37,13 @@ def get_input(num)
 end
 
 
-puts get_input(1)
+one = get_input(1)
+two = get_input(2)
+three = get_input(3)
+four = get_input(4)
+five = get_input(5)
+six = get_input(6)
+
 
 
 #==> Enter the 1st number:
