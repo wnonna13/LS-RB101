@@ -1,8 +1,26 @@
 #Write a program that solicits 6 numbers from the user, then prints a message that describes whether or not the 6th number appears amongst the first 5 numbers.
 
 #PSEUDOCODE
-#input = 6 numbers
+# input = 6 numbers
 # output = array, yes/no message
+
+# METHOD 
+# Create new saved array
+# Ask user to input a number
+    # Validate number 
+        # If number is valid, proceed
+        # If not, ask user to input again
+    # Ask user if number is correct
+        # If yes, proceed
+        # If no, ask user to input again
+        # Else: Error, please enter yes/no
+# Save number to array
+# Repeat for 6 numbers
+# Check if 6th number is in array
+    # Print array
+    # If yes, enter "yes, it is here" message
+    # If no, enter 'no, it isn't here" message
+
 
 
 #==> Enter the 1st number:
