@@ -22,7 +22,6 @@
     # If no, enter 'no, it isn't here" message
 
 def get_input(num)
-    new_array = []
     puts "Please input a positive integer as number ##{num}."
     is_valid = false
     while is_valid == false
@@ -34,14 +33,18 @@ def get_input(num)
             is_valid = true
         end
     end
-    new_array << input
-    new_array
+    input
+end
+
+def create_array(num1)
+    new_array = []
+    new_array << num1
 end
 
 
-
-
 one = get_input(1)
+puts create_array(one)
+
 #two = get_input(2)
 #three = get_input(3)
 #four = get_input(4)
