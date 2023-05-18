@@ -21,6 +21,23 @@
     # If yes, enter "yes, it is here" message
     # If no, enter 'no, it isn't here" message
 
+def get_input(num)
+    puts "Please input a positive integer as number ##{num}."
+    is_valid = false
+    while is_valid == false
+        input = gets.chomp
+        if %w(a b c d e f g h i j k l m n o p q r s t u v w x y z).any? { |x| input.include? x }
+            puts "Thank you, you entered #{input}."
+            is_valid = true
+        else
+            puts "That is invalid. Please enter an integer."
+        end
+    end
+    input
+end
+
+
+puts get_input(1)
 
 
 #==> Enter the 1st number:
