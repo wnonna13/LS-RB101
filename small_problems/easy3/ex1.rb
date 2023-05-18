@@ -27,10 +27,10 @@ def get_input(num)
     while is_valid == false
         input = gets.chomp
         if %w(a b c d e f g h i j k l m n o p q r s t u v w x y z).any? { |x| input.include? x }
-            puts "Thank you, you entered #{input}."
-            is_valid = true
-        else
             puts "That is invalid. Please enter an integer."
+        else
+            puts "Thank you. You entered #{input}."
+            is_valid = true
         end
     end
     input
