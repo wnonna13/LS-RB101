@@ -1,5 +1,11 @@
 #Write a program that prompts the user for two positive integers, and then prints the results of the following operations on those two numbers: addition, subtraction, product, quotient, remainder, and power. Do not worry about validating the input.
 
+#PSEUDOCODE 
+
+#INPUT  - integer1, integer2
+
+#OUTPUT - addition, subtraction, product, quotient, remainder, power
+
 #==> Enter the first number:
 #23
 #==> Enter the second number:
