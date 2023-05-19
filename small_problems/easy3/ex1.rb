@@ -63,6 +63,11 @@ def add_to_array(array, num)
 end
 
 add_to_array(numbers,one)
+add_to_array(numbers, two)
+add_to_array(numbers, three)
+add_to_array(numbers, four)
+add_to_array(numbers, five)
+add_to_array(numbers, six)
 
 puts numbers
 
