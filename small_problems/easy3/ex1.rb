@@ -51,6 +51,7 @@ end
 #end
 numbers = []
 
+one = get_input(1)
 two = get_input(2)
 three = get_input(3)
 four = get_input(4)
@@ -61,8 +62,9 @@ def add_to_array(array, num)
     array << num.to_i
 end
 
+add_to_array(numbers,one)
 
-
+puts numbers
 
 #==> Enter the 1st number:
 #25
