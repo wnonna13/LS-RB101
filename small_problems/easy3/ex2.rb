@@ -3,8 +3,17 @@
 #PSEUDOCODE 
 
 #INPUT  - integer1, integer2
-
 #OUTPUT - addition, subtraction, product, quotient, remainder, power
+
+#METHOD 
+# Ask for an integer
+# Ask for a second integer
+# add = int1 + int2
+# sub = int - int2
+# product = int * int2
+# quotient = int / int2
+# remainder = int % int2
+# power = int ** int2
 
 #==> Enter the first number:
 #23
