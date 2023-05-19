@@ -69,7 +69,7 @@ add_to_array(numbers, four)
 add_to_array(numbers, five)
 add_to_array(numbers, six)
 
-puts numbers
+p numbers
 
 #==> Enter the 1st number:
 #25
