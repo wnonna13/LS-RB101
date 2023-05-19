@@ -36,20 +36,31 @@ def get_input(num)
     input
 end
 
-def create_array(num1)
-    new_array = []
-    new_array << num1
-end
+#def add_to_array(num1)
+#    new_array = []
+#    new_array << num1
+#end
 
 
-one = get_input(1)
-puts create_array(one)
-
+#one = get_input(1)
 #two = get_input(2)
 #three = get_input(3)
-#four = get_input(4)
-#five = get_input(5)
-#six = get_input(6)
+
+
+#def combine_array
+#end
+numbers = []
+
+two = get_input(2)
+three = get_input(3)
+four = get_input(4)
+five = get_input(5)
+six = get_input(6)
+
+def add_to_array(array, num)
+    array << num.to_i
+end
+
 
 
 
