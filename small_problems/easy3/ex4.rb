@@ -12,8 +12,13 @@ multiply(5, 3) == 15
 # Multiply int1 * int2 and save result as a new variable (as "result")
 # Return this new variable ("result")
 
-def get_input
+def get_input_1
     puts "Please enter the first number:"
+    input = gets.chomp
+end
+
+def get_input_2
+    puts "Please enter the second number:"
     input = gets.chomp
 end
 
