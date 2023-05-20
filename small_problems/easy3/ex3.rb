@@ -18,3 +18,7 @@
     # else, pass 
 # Return counter
 
+def get_input 
+    puts "Please enter a word, multiple words, or a phrase:"
+    input = gets.chomp.to_s
+end
