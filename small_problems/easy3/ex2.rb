@@ -60,10 +60,6 @@ def do_power(num1, num2)
      message = "#{num1} to the power of #{num2} = #{num1.to_i ** num2.to_i}"
 end
 
-one = get_input
-two = get_input_2
-
-
 
 def print_methods(num1, num2)
     puts do_add(num1, num2)
@@ -73,5 +69,8 @@ def print_methods(num1, num2)
     puts do_remain(num1, num2)
     puts do_power(num1, num2)
 end
+
+one = get_input
+two = get_input_2
 
 print_methods(one, two)
