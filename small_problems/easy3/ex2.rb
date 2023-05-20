@@ -25,3 +25,8 @@
 #==> 23 / 17 = 1
 #==> 23 % 17 = 6
 #==> 23 ** 17 = 141050039560662968926103
+
+def get_input
+    puts "Please enter a positive integer:"
+    input = gets.chomp 
+end
