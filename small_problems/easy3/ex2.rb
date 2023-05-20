@@ -41,7 +41,11 @@ def do_add(num1, num2)
 end
 
 def do_sub(num1, num2)
-        message = "#{num1} - #{num2} = #{num1.to_i - num2.to_i}"
+    message = "#{num1} - #{num2} = #{num1.to_i - num2.to_i}"
+end
+
+def do_prod(num1, num2)
+    message = "#{num1} x #{num2} = #{num1.to_i * num2.to_i}"
 end
 
 one = get_input
@@ -49,4 +53,5 @@ two = get_input_2
 
 puts do_add(one, two)
 puts do_sub(one, two)
+puts do_prod(one, two)
 
