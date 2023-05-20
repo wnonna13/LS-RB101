@@ -22,3 +22,16 @@ def get_input
     puts "Please enter a word, multiple words, or a phrase:"
     input = gets.chomp.to_s
 end
+
+input = get_input
+
+def count_char(str)
+    counter = 0
+    str.each do |s|
+        if s != " "
+            counter += 1
+        else 
+            nil
+        end
+    end 
+end
