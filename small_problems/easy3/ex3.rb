@@ -25,7 +25,7 @@ end
 
 def count_char(str)
     counter = 0
-    str.each do |s|
+    str.each_char do |s|
         if s != " "
             counter += 1
         else 
