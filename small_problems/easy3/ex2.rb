@@ -27,6 +27,18 @@
 #==> 23 ** 17 = 141050039560662968926103
 
 def get_input
-    puts "Please enter a positive integer:"
+    puts "Please enter a positive number:"
     input = gets.chomp 
 end
+
+def get_input_2
+    puts "Please enter a positive number:"
+    input = gets.chomp 
+end
+
+one = get_input
+two = get_input_2
+
+
+puts one
+puts two
