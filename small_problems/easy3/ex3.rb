@@ -23,8 +23,6 @@ def get_input
     input = gets.chomp.to_s
 end
 
-input = get_input
-
 def count_char(str)
     counter = 0
     str.each do |s|
@@ -34,4 +32,9 @@ def count_char(str)
             nil
         end
     end 
+    counter
 end
+
+input = get_input
+
+puts count_char(input)
