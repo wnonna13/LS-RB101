@@ -36,9 +36,12 @@ def get_input_2
     input = gets.chomp 
 end
 
+def do_add(num1, num2)
+    message = "#{num1} + #{num2} = #{num1.to_i + num2.to_i}"
+end
+
 one = get_input
 two = get_input_2
 
+puts do_add(one, two)
 
-puts one
-puts two
