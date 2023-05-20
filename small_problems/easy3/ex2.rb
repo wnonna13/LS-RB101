@@ -63,9 +63,15 @@ end
 one = get_input
 two = get_input_2
 
-puts do_add(one, two)
-puts do_sub(one, two)
-puts do_prod(one, two)
-puts do_quotient(one, two)
-puts do_remain(one, two)
-puts do_power(one, two)
+
+
+def print_methods(num1, num2)
+    puts do_add(num1, num2)
+    puts do_sub(num1, num2)
+    puts do_prod(num1, num2)
+    puts do_quotient(num1, num2)
+    puts do_remain(num1, num2)
+    puts do_power(num1, num2)
+end
+
+print_methods(one, two)
