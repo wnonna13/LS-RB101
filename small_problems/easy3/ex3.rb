@@ -7,5 +7,14 @@
 #There are 13 characters in "walk, don't run".
 
 #PSUEDOCODE 
-# INPUT = array 
+# INPUT = string
 # OUTPUT = number of characters (but not including spaces)
+
+# METHOD 
+# Ask user for input 
+# Create a counter = 0
+# Iterate through input string 
+    # If string != " ", counter += 1
+    # else, pass 
+# Return counter
+
