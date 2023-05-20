@@ -52,6 +52,10 @@ def do_quotient(num1, num2)
     message = "#{num1} / #{num2} = #{num1.to_i / num2.to_i}"
 end
 
+def do_remain(num1, num2)
+    message = "#{num1} % #{num2} = #{num1.to_i % num2.to_i}"
+end
+
 one = get_input
 two = get_input_2
 
@@ -59,4 +63,4 @@ puts do_add(one, two)
 puts do_sub(one, two)
 puts do_prod(one, two)
 puts do_quotient(one, two)
-
+puts do_remain(one, two)
