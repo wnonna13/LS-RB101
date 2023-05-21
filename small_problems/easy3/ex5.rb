@@ -14,14 +14,10 @@ def get_input_1
     input = gets.chomp
 end
 
-def get_input_2
-    puts "Please enter a number:"
-    input = gets.chomp
-end
-
 def square(num)
     result = num.to_i ** num.to_i
 end
 
-square(5) == 25
-square(-8) == 64
+input = get_input_1
+
+puts square(input)
