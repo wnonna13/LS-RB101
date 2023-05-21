@@ -22,10 +22,10 @@ def get_input_2
 end
 
 def multiply(num1, num2)
-    result = num1 * num2
+    result = num1.to_i * num2.to_i
 end
 
 one = get_input_1
 two = get_input_2
 
-multiply(one, two)
+puts multiply(one, two)
