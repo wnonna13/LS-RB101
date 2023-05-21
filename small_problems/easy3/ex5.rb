@@ -15,7 +15,7 @@ def get_input_1
 end
 
 def square(num)
-    result = num.to_i ** num.to_i
+    result = num.to_i * num.to_i
 end
 
 input = get_input_1
