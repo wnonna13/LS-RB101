@@ -7,6 +7,11 @@
 # METHOD 
 # Ask user for input
 # Multiply input by itself
+# Return product
+
+def square(num)
+    result = num.to_i ** num.to_i
+end
 
 square(5) == 25
 square(-8) == 64
