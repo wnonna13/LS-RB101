@@ -25,6 +25,7 @@ def multiply(num1, num2)
     result = num1 * num2
 end
 
+one = get_input_1
+two = get_input_2
 
-multiply(5, 3) == 15
-
+multiply(one, two)
