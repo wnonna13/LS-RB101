@@ -4,6 +4,9 @@
 # INPUT = input
 # OUTPUT =  product 
 
+# METHOD 
+# Ask user for input
+# Multiply input by itself
 
 square(5) == 25
 square(-8) == 64
