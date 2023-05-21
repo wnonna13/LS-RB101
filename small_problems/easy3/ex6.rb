@@ -4,6 +4,12 @@
 
 #Examples:
 
+# PSEUDOCODE
+# Create method
+    # Use if || method. 
+    # return true 
+
+
 xor?(5.even?, 4.even?) == true
 xor?(5.odd?, 4.odd?) == true
 xor?(5.odd?, 4.even?) == false
