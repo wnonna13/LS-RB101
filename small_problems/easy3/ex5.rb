@@ -9,6 +9,11 @@
 # Multiply input by itself
 # Return product
 
+def get_input_1
+    puts "Please enter a number:"
+    input = gets.chomp
+end
+
 def square(num)
     result = num.to_i ** num.to_i
 end
