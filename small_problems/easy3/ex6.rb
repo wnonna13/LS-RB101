@@ -18,6 +18,7 @@ def xor?(one, two)
         return true
     else
         return false
+    end
 end
 
 xor?(5.even?, 4.even?) #== true
