@@ -14,14 +14,16 @@
 #end
 
 def xor?(one, two)
-    if one == true || two == true
+    if one == true && two == true
+        return false
+    elsif one == true || two == true
         return true
     else
         return false
     end
 end
 
-xor?(5.even?, 4.even?) #== true
-xor?(5.odd?, 4.odd?) #== true
-xor?(5.odd?, 4.even?) #== false
-xor?(5.even?, 4.odd?) #== false
+puts xor?(5.even?, 4.even?) #== true
+puts xor?(5.odd?, 4.odd?) #== true
+puts xor?(5.odd?, 4.even?) #== false
+puts xor?(5.even?, 4.odd?) #== false
