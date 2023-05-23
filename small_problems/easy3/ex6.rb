@@ -13,6 +13,13 @@
 #    puts (one || two)? true : false
 #end
 
+def xor?(one, two)
+    if one == true || two == true
+        return true
+    else
+        return false
+end
+
 xor?(5.even?, 4.even?) #== true
 xor?(5.odd?, 4.odd?) #== true
 xor?(5.odd?, 4.even?) #== false
