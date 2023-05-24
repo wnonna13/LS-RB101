@@ -60,6 +60,13 @@ str = "hello"
 rev = str.reverse
 puts rev
 
+def palindrome?(str)
+    (str == str.reverse)? true : false
+end
+
+puts palindrome?("madam")
+puts palindrome?("yo")
+
 #palindrome?('madam') == true
 #palindrome?('Madam') == false          # (case matters)
 #palindrome?("madam i'm adam") == false # (all characters matter)
