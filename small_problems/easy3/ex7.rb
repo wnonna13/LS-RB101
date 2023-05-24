@@ -20,6 +20,18 @@ def get_input
         puts "Please enter a phrase"
         input = gets.chomp
         puts "You entered: #{input}. Is this correct? Please enter Yes or No"
+        choice = gets.chomp.downcase
+        is_valid = false
+        while is_valid == false
+            if choice == 'yes' || choice == 'y'
+                puts "Thank you!"
+                is_correct = true
+            elsif choice == 'no' || choice == 'n'
+                puts "Ok."
+            else
+                puts "Sorry, I don't understand. Please enter Yes or No."
+            end
+        end
     end
 end
 
