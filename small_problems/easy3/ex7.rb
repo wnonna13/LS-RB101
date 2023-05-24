@@ -40,6 +40,12 @@ end
 
 get_input
 
+def palindrome?(str)
+    new_str = ""
+    iterator = 0
+    
+end
+
 #palindrome?('madam') == true
 #palindrome?('Madam') == false          # (case matters)
 #palindrome?("madam i'm adam") == false # (all characters matter)
