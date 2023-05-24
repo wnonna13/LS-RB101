@@ -38,7 +38,20 @@ def get_input
     input
 end
 
-#get_input
+input = get_input
+
+def palindrome?(str)
+    (str == str.reverse)? true : false
+end
+
+puts palindrome?(input)
+
+#palindrome?('madam') == true
+#palindrome?('Madam') == false          # (case matters)
+#palindrome?("madam i'm adam") == false # (all characters matter)
+#palindrome?('356653') == true
+
+
 
 # madam 
 # m = 0 , a = 1 , d = 2, a = 3, m = 4
@@ -56,18 +69,6 @@ end
 #end
 #puts palindrome?("hello")
 
-str = "hello"
-rev = str.reverse
-puts rev
-
-def palindrome?(str)
-    (str == str.reverse)? true : false
-end
-
-puts palindrome?("madam")
-puts palindrome?("yo")
-
-#palindrome?('madam') == true
-#palindrome?('Madam') == false          # (case matters)
-#palindrome?("madam i'm adam") == false # (all characters matter)
-#palindrome?('356653') == true
+#str = "hello"
+#rev = str.reverse
+#puts rev
