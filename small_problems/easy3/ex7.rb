@@ -19,23 +19,27 @@ def get_input
     while is_correct == false
         puts "Please enter a phrase"
         input = gets.chomp
-        puts "You entered: #{input}. Is this correct? Please enter Yes or No"
-        choice = gets.chomp.downcase
         is_valid = false
         while is_valid == false
+            puts "You entered: #{input}. Is this correct? Please enter Yes or No"
+            choice = gets.chomp.downcase
             if choice == 'yes' || choice == 'y'
                 puts "Thank you!"
                 is_correct = true
             elsif choice == 'no' || choice == 'n'
                 puts "Ok."
+                is_valid = true
             else
                 puts "Sorry, I don't understand. Please enter Yes or No."
             end
         end
     end
+    input
 end
 
-palindrome?('madam') == true
-palindrome?('Madam') == false          # (case matters)
-palindrome?("madam i'm adam") == false # (all characters matter)
-palindrome?('356653') == true
+get_input
+
+#palindrome?('madam') == true
+#palindrome?('Madam') == false          # (case matters)
+#palindrome?("madam i'm adam") == false # (all characters matter)
+#palindrome?('356653') == true
