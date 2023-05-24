@@ -26,6 +26,7 @@ def get_input
             if choice == 'yes' || choice == 'y'
                 puts "Thank you!"
                 is_correct = true
+                is_valid = true
             elsif choice == 'no' || choice == 'n'
                 puts "Ok."
                 is_valid = true
