@@ -14,6 +14,15 @@
     # Return true
     # Else, return false
 
+def get_input
+    is_correct = false
+    while is_correct == false
+        puts "Please enter a phrase"
+        input = gets.chomp
+        puts "You entered: #{input}. Is this correct? Please enter Yes or No"
+    end
+end
+
 palindrome?('madam') == true
 palindrome?('Madam') == false          # (case matters)
 palindrome?("madam i'm adam") == false # (all characters matter)
