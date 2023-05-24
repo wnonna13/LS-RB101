@@ -38,13 +38,27 @@ def get_input
     input
 end
 
-get_input
+#get_input
 
-def palindrome?(str)
-    new_str = ""
-    iterator = 0
-    
-end
+# madam 
+# m = 0 , a = 1 , d = 2, a = 3, m = 4
+
+
+
+#def palindrome?(str)
+#    new_str = []
+#    iterator = 0
+#    for i in str do
+#        new_str += i
+#        puts i
+#    end
+#    new_str 
+#end
+#puts palindrome?("hello")
+
+str = "hello"
+rev = str.reverse
+puts rev
 
 #palindrome?('madam') == true
 #palindrome?('Madam') == false          # (case matters)
