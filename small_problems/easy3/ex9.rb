@@ -4,6 +4,14 @@
 # Input = number
 # Output = true or false
 
+# METHOD
+# Convert number to string
+    # Save as a new string
+# Create second string
+# If new string.reverse == second string 
+    # Return true
+    # Else false
+
 palindromic_number?(34543) == true
 palindromic_number?(123210) == false
 palindromic_number?(22) == true
