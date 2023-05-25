@@ -5,6 +5,16 @@
 # input = string
 # output = true or false
 
+# METHOD 
+# Create a new string 
+# Save new string as input.reverse 
+# Erase all " " and non-alphanumeric symbols
+# If new string == input.reverse
+    # return true
+    # else false
+
+
+
 real_palindrome?('madam') == true
 real_palindrome?('Madam') == true           # (case does not matter)
 real_palindrome?("Madam, I'm Adam") == true # (only alphanumerics matter)
