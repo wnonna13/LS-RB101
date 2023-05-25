@@ -46,10 +46,10 @@ end
 
 puts palindrome?(input)
 
-#palindrome?('madam') == true
-#palindrome?('Madam') == false          # (case matters)
-#palindrome?("madam i'm adam") == false # (all characters matter)
-#palindrome?('356653') == true
+puts palindrome?('madam') #== true
+puts palindrome?('Madam') #== false          # (case matters)
+puts palindrome?("madam i'm adam") #== false # (all characters matter)
+puts palindrome?('356653') #== true
 
 
 
