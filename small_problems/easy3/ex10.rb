@@ -12,10 +12,15 @@
     # return true
     # else return false
 
+def uppercase?(str)
+    new_str = str.upcase
+    (str == new_str)? true : false
+end
 
-uppercase?('t') == false
-uppercase?('T') == true
-uppercase?('Four Score') == false
-uppercase?('FOUR SCORE') == true
-uppercase?('4SCORE!') == true
-uppercase?('') == true
+
+puts uppercase?('t') #== false
+puts uppercase?('T') #== true
+puts uppercase?('Four Score') #== false
+puts uppercase?('FOUR SCORE')# == true
+puts uppercase?('4SCORE!') #== true
+puts uppercase?('')# == true
