@@ -22,7 +22,7 @@ def real_palindrome?(str)
         pass
     end
     }
-    new_str
+    (new_str == str)? true : false
 
 end
 
