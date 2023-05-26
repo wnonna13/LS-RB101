@@ -16,8 +16,8 @@
 # Return string3
 
 def short_long_short(str1, str2)
-    len1 = str1.len
-    len2 = str2.len
+    len1 = str1.length
+    len2 = str2.length
     str3 = ""
     if len1 > len2
         str3 = str2 + str1 + str2
@@ -27,6 +27,6 @@ def short_long_short(str1, str2)
     str3
 end
 
-short_long_short('abc', 'defgh') == "abcdefghabc"
-short_long_short('abcde', 'fgh') == "fghabcdefgh"
-short_long_short('', 'xyz') == "xyz"
+puts short_long_short('abc', 'defgh') #== "abcdefghabc"
+puts short_long_short('abcde', 'fgh') #== "fghabcdefgh"
+puts short_long_short('', 'xyz') #== "xyz"
