@@ -30,7 +30,11 @@ def get_century(num)
     century = (num.to_f / 100).ceil
 end
 
-def century(num)
+def choose_century(num)
+    nil
+end
+
+def print_message(num)
     century = get_century(num)
     message = "The year #{num} is in the #{...} century."
 end
