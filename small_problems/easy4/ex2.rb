@@ -26,12 +26,26 @@
         # Else
             # return "#{century}th"
 
-century(2000) == '20th'
-century(2001) == '21st'
-century(1965) == '20th'
-century(256) == '3rd'
-century(5) == '1st'
-century(10103) == '102nd'
-century(1052) == '11th'
-century(1127) == '12th'
-century(11201) == '113th'
+def get_century(num)
+    century = (num / 100).to_f.ceil
+end
+
+puts get_century(2000) #== '20th'
+puts get_century(2001) #== '21st'
+puts get_century(1965) #== '20th'
+puts get_century(256) #== '3rd'
+puts get_century(5) #== '1st'
+puts get_century(10103) #== '102nd'
+puts get_century(1052) #== '11th'
+puts get_century(1127) #== '12th'
+puts get_century(11201) #== '113th'
+
+#century(2000) == '20th'
+#century(2001) == '21st'
+#century(1965) == '20th'
+#century(256) == '3rd'
+#century(5) == '1st'
+#century(10103) == '102nd'
+#century(1052) == '11th'
+#century(1127) == '12th'
+#century(11201) == '113th'
