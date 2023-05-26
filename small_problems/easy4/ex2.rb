@@ -12,11 +12,17 @@
 # Make a method to print century with suffix
     # Make an if/else statement
         # If century.to_i < 10 && century.to_s[-1] == 1
-            # return "#{century}st""
+            # return "#{century}st"
+        # Elsif century.to_i > 11 && century.to_s[-1] == 1
+            # return "#{century}st"" 
         # Elsif century.to_i < 10 && century.to_s[-1] == 2
-            # return "#{century}nd""    
+            # return "#{century}nd"
+        # Elsif century.to_i > 12 && century.to_s[-1] == 2
+            # return "#{century}nd"
         # Elsif century.to_i < 10 && century.to_s[-1] == 3
-            # return "#{century}rd"" 
+            # return "#{century}rd"
+        # Elsif century.to_i < 13 && century.to_s[-1] == 3
+            # return "#{century}rd"
 
 century(2000) == '20th'
 century(2001) == '21st'
