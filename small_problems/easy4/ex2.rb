@@ -30,6 +30,11 @@ def get_century(num)
     century = (num.to_f / 100).ceil
 end
 
+def century(num)
+    century = get_century(num)
+    message = "The year #{num} is in the #{...} century."
+end
+
 puts get_century(2000) #== '20th'
 puts get_century(2001) #== '21st'
 puts get_century(1965) #== '20th'
