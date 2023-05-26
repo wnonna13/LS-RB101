@@ -21,8 +21,10 @@
             # return "#{century}nd"
         # Elsif century.to_i < 10 && century.to_s[-1] == 3
             # return "#{century}rd"
-        # Elsif century.to_i < 13 && century.to_s[-1] == 3
+        # Elsif century.to_i > 13 && century.to_s[-1] == 3
             # return "#{century}rd"
+        # Else
+            # return "#{century}th"
 
 century(2000) == '20th'
 century(2001) == '21st'
