@@ -2,6 +2,10 @@
 
 #New centuries begin in years that end with 01. So, the years 1901-2000 comprise the 20th century.
 
+# PSEUDOCODE 
+# Input = year 
+# Output = string
+
 century(2000) == '20th'
 century(2001) == '21st'
 century(1965) == '20th'
