@@ -4,6 +4,14 @@
 # INPUT = string
 # OUTPUT = true or false
 
+# METHOD 
+# Create new string
+# Get input from user
+# save new string as input.upcase
+# if new string == input.upcase
+    # return true
+    # else return false
+
 
 uppercase?('t') == false
 uppercase?('T') == true
