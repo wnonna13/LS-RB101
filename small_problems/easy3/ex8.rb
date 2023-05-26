@@ -19,7 +19,7 @@ def real_palindrome?(str)
     if c.match(/\A[a-zA-Z0-9]*\z/).nil?
         new_str += c
     else
-        pass
+        nil
     end
     }
     (new_str == str)? true : false
