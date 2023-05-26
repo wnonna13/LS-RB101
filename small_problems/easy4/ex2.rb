@@ -27,7 +27,7 @@
             # return "#{century}th"
 
 def get_century(num)
-    century = (num / 100).to_f.ceil
+    century = (num.to_f / 100).ceil
 end
 
 puts get_century(2000) #== '20th'
