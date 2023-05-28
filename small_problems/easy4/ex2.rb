@@ -30,17 +30,21 @@ def get_century(num)
     century = (num.to_f / 100).ceil
 end
 
-def choose_century(num)
-    if num.to_i < 10 && num.to_s[-1] == 1
-        return "#{num}st"
-    elsif num.to_i > 11 && num.to_s[-1] == 1
-        return "#{num}st"
-    end
-end
+#def choose_century(num, lastdigit)
+#    string = ""
+#    if (num.to_i < 10) && (lastdigit == 1)
+#        string = num.to_s + "st"
+#    elsif (num.to_i > 11) && (lastdigit == 1)
+#        string = num.to_s + "st"
+#    end
+#    string
+#end
 
 century = get_century(2001)
 puts century
 puts century.to_s[-1]
+#century_lastdigit = century.to_s[-1]
+#uts choose_century(century, century_lastdigit)
 #puts choose_century(century)
 
 #def print_message(num)
