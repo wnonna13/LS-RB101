@@ -38,7 +38,8 @@ def choose_century(num)
     end
 end
 
-puts choose_century(2001)
+century = get_century(2001)
+puts choose_century(century)
 
 #def print_message(num)
 #    century = get_century(num)
