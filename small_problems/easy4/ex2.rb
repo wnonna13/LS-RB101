@@ -31,23 +31,29 @@ def get_century(num)
 end
 
 def choose_century(num)
-    nil
+    if num.to_i < 10 && num.to_s[-1] == 1
+        return "#{num}st"
+    elsif num.to_i > 11 && num.to_s[-1] == 1
+        return "#{num}st"
+    end
 end
 
-def print_message(num)
-    century = get_century(num)
-    message = "The year #{num} is in the #{...} century."
-end
+puts choose_century(2001)
 
-puts get_century(2000) #== '20th'
-puts get_century(2001) #== '21st'
-puts get_century(1965) #== '20th'
-puts get_century(256) #== '3rd'
-puts get_century(5) #== '1st'
-puts get_century(10103) #== '102nd'
-puts get_century(1052) #== '11th'
-puts get_century(1127) #== '12th'
-puts get_century(11201) #== '113th'
+#def print_message(num)
+#    century = get_century(num)
+#    message = "The year #{num} is in the #{...} century."
+#end
+
+#puts get_century(2000) #== '20th'
+#puts get_century(2001) #== '21st'
+#puts get_century(1965) #== '20th'
+#puts get_century(256) #== '3rd'
+#puts get_century(5) #== '1st'
+#puts get_century(10103) #== '102nd'
+#puts get_century(1052) #== '11th'
+#puts get_century(1127) #== '12th'
+#puts get_century(11201) #== '113th'
 
 #century(2000) == '20th'
 #century(2001) == '21st'
