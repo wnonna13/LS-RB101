@@ -53,9 +53,9 @@ def select_ending_str(num)
     elsif (num.to_i > 12) && (num.to_s[-1] == '2')
         string = "nd"
     elsif (num.to_i < 10) && (num.to_s[-1] == '3')
-        string = "nd"
+        string = "rd"
     elsif (num.to_i > 13) && (num.to_s[-1] == '3')
-        string = "nd"
+        string = "rd"
     else
         string = "th"
     end
