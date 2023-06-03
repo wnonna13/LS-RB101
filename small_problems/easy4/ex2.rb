@@ -47,15 +47,14 @@ end
 
 def select_ending(num)
     string = ""
-    if (num.to_i < 10) && (num.to_s[-1] == 1)
+    if (num.to_i < 10) && (num.to_s[-1] == '1')
         string = "st"
-        puts "ayo"
-    elsif (num.to_i > 11) || (num.to_s[-1] == '1')
+    elsif (num.to_i > 11) && (num.to_s[-1] == '1')
         string = "st"
-        puts "huh"
-    else
-        puts "invalid"
-        string = "th"
+    elsif (num.to_i < 10) && (num.to_s[-1] == '2')
+        string = "nd"
+    elsif (num.to_i > 12) && (num.to_s[-1] == '2')
+        string = "nd"
     end
     string
 end
