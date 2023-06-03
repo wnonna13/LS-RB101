@@ -16,18 +16,31 @@
 # Else 
     # Return false
 
+def get_year
+    is_valid = false
+    while is_valid == false
+        puts "Please enter a year"
+        year = gets.chomp
+        if year.to_i > 0
+            is_valid = true
+        end
+    end
+    year
+end
+
+puts get_year
 
 
-leap_year?(2016) == true
-leap_year?(2015) == false
-leap_year?(2100) == false
-leap_year?(2400) == true
-leap_year?(240000) == true
-leap_year?(240001) == false
-leap_year?(2000) == true
-leap_year?(1900) == false
-leap_year?(1752) == true
-leap_year?(1700) == false
-leap_year?(1) == false
-leap_year?(100) == false
-leap_year?(400) == true
+#leap_year?(2016) == true
+#leap_year?(2015) == false
+#leap_year?(2100) == false
+#leap_year?(2400) == true
+#leap_year?(240000) == true
+#leap_year?(240001) == false
+#leap_year?(2000) == true
+#leap_year?(1900) == false
+#leap_year?(1752) == true
+#leap_year?(1700) == false
+#leap_year?(1) == false
+#leap_year?(100) == false
+#leap_year?(400) == true
