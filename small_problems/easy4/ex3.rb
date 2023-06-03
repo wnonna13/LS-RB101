@@ -46,7 +46,14 @@ end
 
 def leap_year?
     year = get_year
-    message = nil
+    result = check_leap_year(year)
+    message = ""
+    if result == true
+        message = "The year #{year} is a leap year"
+    else
+        message = "The year #{year} is not a leap year"
+    end
+    message
 end
 
 puts check_leap_year(2016)
