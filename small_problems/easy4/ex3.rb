@@ -44,31 +44,31 @@ def check_leap_year(year)
     end
 end
 
-def leap_year?
-    year = get_year
+def leap_year?(year)
+    #year = get_year
     result = check_leap_year(year)
     message = ""
     if result == true
-        message = "The year #{year} is a leap year"
+        message = "The year #{year} is a leap year."
     else
-        message = "The year #{year} is not a leap year"
+        message = "The year #{year} is not a leap year."
     end
     message
 end
 
-puts check_leap_year(2016)
-puts check_leap_year(2015)
-puts check_leap_year(2100)
-puts check_leap_year(2400)
-puts check_leap_year(240000)
-puts check_leap_year(240001)
-puts check_leap_year(2000)
-puts check_leap_year(1900)
-puts check_leap_year(1752)
-puts check_leap_year(1700)
-puts check_leap_year(1)
-puts check_leap_year(100)
-puts check_leap_year(400)
+puts leap_year?(2016)
+puts leap_year?(2015)
+puts leap_year?(2100)
+puts leap_year?(2400)
+puts leap_year?(240000)
+puts leap_year?(240001)
+puts leap_year?(2000)
+puts leap_year?(1900)
+puts leap_year?(1752)
+puts leap_year?(1700)
+puts leap_year?(1)
+puts leap_year?(100)
+puts leap_year?(400)
 
 #leap_year?(2016) == true
 #leap_year?(2015) == false
