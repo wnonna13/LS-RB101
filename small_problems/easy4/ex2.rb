@@ -68,15 +68,15 @@ def print_message(num)
     message = "The year #{num.to_s} is in the #{century}#{ending} century."
 end
 
-puts print_mgessage(2000)
-puts print_mgessage(2001)
-puts print_mgessage(1965)
-puts print_mgessage(256)
-puts print_mgessage(5)
-puts print_mgessage(10103)
-puts print_mgessage(1052)
-puts print_mgessage(1127)
-puts print_mgessage(11201)
+puts print_message(2000)
+puts print_message(2001)
+puts print_message(1965)
+puts print_message(256)
+puts print_message(5)
+puts print_message(10103)
+puts print_message(1052)
+puts print_message(1127)
+puts print_message(11201)
 
 #century_lastdigit = century.to_s[-1]
 #uts choose_century(century, century_lastdigit)
