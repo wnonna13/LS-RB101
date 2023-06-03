@@ -6,6 +6,17 @@
 # Input = year
 # Output = true or false (depending on if it is a leap year)
 
+# Method 
+# Get year, validate as number
+# If year % 4 == 0 
+    # If year % 100 == 0
+        # (year % 400 == 0)? true: false
+    # Else 
+        # return true
+# Else 
+    # Return false
+
+
 
 leap_year?(2016) == true
 leap_year?(2015) == false
