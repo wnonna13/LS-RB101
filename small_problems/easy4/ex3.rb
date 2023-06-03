@@ -31,8 +31,17 @@ def get_year
     year
 end
 
-def check_leap_year
-    nil
+def check_leap_year(year)
+    year = year.to_i
+    if (year % 4 == 0)
+        if (year % 100 == 0)
+            (year % 400 == 0)? true : false
+        else 
+            return true
+        end
+    else
+        return false
+    end
 end
 
 def leap_year?
@@ -40,6 +49,7 @@ def leap_year?
     message = nil
 end
 
+puts check_leap_year(2016)
 
 #leap_year?(2016) == true
 #leap_year?(2015) == false
