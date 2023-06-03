@@ -42,7 +42,7 @@ end
 
 
 
-def select_ending(num)
+def select_ending_str(num)
     string = ""
     if (num.to_i < 10) && (num.to_s[-1] == '1')
         string = "st"
@@ -62,14 +62,14 @@ def select_ending(num)
     string
 end
 
-def print_century(num)
+def print_message(num)
     century = get_century(num)
-    ending = select_ending(century)
+    ending = select_ending_str(century)
     message = "The year #{num.to_s} is in the #{century}#{ending} century."
 end
 
 
-puts print_century(2001)
+puts print_mgessage(2001)
 
 #century_lastdigit = century.to_s[-1]
 #uts choose_century(century, century_lastdigit)
