@@ -40,9 +40,31 @@ end
 #    string
 #end
 
+def print_century(num)
+    century = get_century(num)
+    ending = select_ending(century)
+end
+
+def select_ending(num)
+    string = ""
+    if (num.to_i < 10) && (num.to_s[-1] == 1)
+        string = "st"
+        puts "ayo"
+    elsif (num.to_i > 11) && (num.to_s[-1] == 1)
+        string = "st"
+        puts "huh"
+    else
+        puts "invalid"
+        string = "th"
+    end
+    string
+end
+
 century = get_century(2001)
 puts century
 puts century.to_s[-1]
+puts print_century(2001)
+
 #century_lastdigit = century.to_s[-1]
 #uts choose_century(century, century_lastdigit)
 #puts choose_century(century)
