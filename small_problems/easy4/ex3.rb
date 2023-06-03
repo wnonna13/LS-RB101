@@ -50,6 +50,18 @@ def leap_year?
 end
 
 puts check_leap_year(2016)
+puts check_leap_year(2015)
+puts check_leap_year(2100)
+puts check_leap_year(2400)
+puts check_leap_year(240000)
+puts check_leap_year(240001)
+puts check_leap_year(2000)
+puts check_leap_year(1900)
+puts check_leap_year(1752)
+puts check_leap_year(1700)
+puts check_leap_year(1)
+puts check_leap_year(100)
+puts check_leap_year(400)
 
 #leap_year?(2016) == true
 #leap_year?(2015) == false
