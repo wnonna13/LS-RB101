@@ -31,7 +31,10 @@ def get_year
     year
 end
 
-puts get_year
+def check_leap_year
+    year = get_year
+    message = nil
+end
 
 
 #leap_year?(2016) == true
