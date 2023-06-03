@@ -32,6 +32,10 @@ def get_year
 end
 
 def check_leap_year
+    nil
+end
+
+def leap_year?
     year = get_year
     message = nil
 end
