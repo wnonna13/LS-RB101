@@ -40,10 +40,7 @@ end
 #    string
 #end
 
-def print_century(num)
-    century = get_century(num)
-    ending = select_ending(century)
-end
+
 
 def select_ending(num)
     string = ""
@@ -55,13 +52,23 @@ def select_ending(num)
         string = "nd"
     elsif (num.to_i > 12) && (num.to_s[-1] == '2')
         string = "nd"
+    elsif (num.to_i < 10) && (num.to_s[-1] == '3')
+        string = "nd"
+    elsif (num.to_i > 13) && (num.to_s[-1] == '3')
+        string = "nd"
+    else
+        string = "th"
     end
     string
 end
 
-century = get_century(2001)
-puts century
-puts century.to_s[-1]
+def print_century(num)
+    century = get_century(num)
+    ending = select_ending(century)
+    message = "The year #{num.to_s} is in the #{century}#{ending} century."
+end
+
+
 puts print_century(2001)
 
 #century_lastdigit = century.to_s[-1]
