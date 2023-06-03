@@ -2,6 +2,11 @@
 
 #Assume this rule is good for any year greater than year 0. Write a method that takes any year greater than 0 as input, and returns true if the year is a leap year, or false if it is not a leap year.
 
+# Pseudocode 
+# Input = year
+# Output = true or false (depending on if it is a leap year)
+
+
 leap_year?(2016) == true
 leap_year?(2015) == false
 leap_year?(2100) == false
