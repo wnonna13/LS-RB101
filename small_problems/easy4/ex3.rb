@@ -22,7 +22,10 @@ def get_year
         puts "Please enter a year"
         year = gets.chomp
         if year.to_i > 0
+            puts "Thank you!"
             is_valid = true
+        else 
+            puts "Sorry, that is invalid."
         end
     end
     year
