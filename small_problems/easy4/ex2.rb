@@ -50,7 +50,7 @@ def select_ending(num)
     if (num.to_i < 10) && (num.to_s[-1] == 1)
         string = "st"
         puts "ayo"
-    elsif (num.to_i > 11) && (num.to_s[-1] == 1)
+    elsif (num.to_i > 11) || (num.to_s[-1] == '1')
         string = "st"
         puts "huh"
     else
