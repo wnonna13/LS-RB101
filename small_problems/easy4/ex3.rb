@@ -83,3 +83,7 @@ puts leap_year?(400)
 #leap_year?(1) == false
 #leap_year?(100) == false
 #leap_year?(400) == true
+
+def leap_year_fixed?(year)
+  (year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)
+end
