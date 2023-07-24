@@ -28,7 +28,6 @@ def integer_to_string(num)
             result.unshift(num % 10)
             num /= 10
         end
-        result.join("")
     end
     result.join("")
 end
