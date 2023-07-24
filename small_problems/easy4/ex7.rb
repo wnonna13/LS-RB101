@@ -8,5 +8,20 @@
 
 #Examples
 
-string_to_integer('4321') == 4321
-string_to_integer('570') == 570
+# input = string
+# output = number
+# method:
+    # split string to separate strings
+    # create if/elif/else (case)
+
+def split_string(str)
+    str.split('')
+end       
+
+puts split_string('4321')
+puts split_string('570')
+
+
+#string_to_integer('4321') == 4321
+#string_to_integer('570') == 570
+
