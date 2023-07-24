@@ -3,6 +3,22 @@
 
 #You may assume that the number passed in is an integer greater than 1.
 
+# input = num
+# output = total 
+
+# pseudocode 
+# total = 0
+# i = 0 
+# (do a loop)
+def multisum(num)
+    i = 0 
+    total = 0
+    while i <= num
+        (i % 3 == 0) || (i % 5 == 0)
+            total += i
+        i += 1
+end
+
 multisum(3) == 3
 multisum(5) == 8
 multisum(10) == 33
