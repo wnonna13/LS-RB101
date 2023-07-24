@@ -27,10 +27,14 @@ def string_to_signed_integer(str)
 
     value = 0
     digits.each { |digit| value = 10 * value + digit}
+    
+    if str.include?("-")
+        value *= -1
+    end
     value
 end
 
 
-string_to_signed_integer('4321') == 4321
-string_to_signed_integer('-570') == -570
-string_to_signed_integer('+100') == 100
+p string_to_signed_integer('4321') == 4321
+p string_to_signed_integer('-570') == -570
+p string_to_signed_integer('+100') == 100
