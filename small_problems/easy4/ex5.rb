@@ -17,6 +17,7 @@ def multisum(num)
         (i % 3 == 0) || (i % 5 == 0)
             total += i
         i += 1
+    end
 end
 
 multisum(3) == 3
