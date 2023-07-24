@@ -9,8 +9,17 @@
         # total = get ascii code(i) + total
         # return total
 
+#p "a".ord
 
-ascii_value('Four score') == 984
-ascii_value('Launch School') == 1251
-ascii_value('a') == 97
-ascii_value('') == 0
+def ascii_value(str)
+    values = str.chars.map { |x| x.ord}
+
+    total = 0
+    values.each { |i| total += i}
+    total
+end
+
+p ascii_value('Four score') == 984
+p ascii_value('Launch School') == 1251
+p ascii_value('a') == 97
+p ascii_value('') == 0
