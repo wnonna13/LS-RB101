@@ -14,7 +14,7 @@
     # split string to separate strings
     # create if/elif/else (case)
 
-def split_string(str)
+def split_it(str)
     str.split('')
 end       
 
@@ -30,6 +30,13 @@ def compare_num(str)
     when "7" then 7
     when "8" then 8
     when "9" then 9
+    end
+end
+
+def split_string(str)
+    array = split_it(str)
+    new_num = ""
+    array.each do {|num| array.append(compare_num(num))}
     end
 end
 

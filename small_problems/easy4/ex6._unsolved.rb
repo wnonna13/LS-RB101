@@ -11,14 +11,24 @@
     # def running_total 
         # array.map {|num| reduce(num) }
     # end
-array = [2, 5, 13]
+#array = [2, 5, 13]
 
-def select_it(array, index)
-    array.select { |n| n <= index}
+#def select_it(array, index)
+#    array.select { |n| n <= index}
+#end
+
+
+#puts select_it(array, 1)
+
+module Enumerable
+    def scan(i)
+        inject([i]) { |acc, el | acc << yield(acc.last, el)}
+    end
 end
 
-
-puts select_it(array, 1)
+def running_total(array)
+    array.scan(0, &:+)
+end
 
 #running_total([2, 5, 13]) == [2, 7, 20]
 #running_total([14, 11, 7, 15, 20]) == [14, 25, 32, 47, 67]
