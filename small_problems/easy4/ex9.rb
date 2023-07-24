@@ -21,13 +21,17 @@ DIGITS = {
 
 def integer_to_string(num)
     result = []
-    while num > 0 
-        result.unshift(num % 10)
-        num /= 10
+    if num == 0
+        result = ["0"]
+    else 
+        while num > 0 
+            result.unshift(num % 10)
+            num /= 10
+        end
+        result.join("")
     end
     result.join("")
 end
-
 #def become_str(array)
 #    str = ""
 #    num = array.shift
