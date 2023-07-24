@@ -1,7 +1,7 @@
 def integer_to_string(num)
     result = []
     if num == 0
-        result = ["0"]
+        result = "0"
     elsif num > 0
         while num > 0 
             result.unshift(num % 10)
