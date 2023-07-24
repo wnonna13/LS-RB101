@@ -19,7 +19,7 @@ DIGITS = {
     9 => '9'
 }
 
-def split(num)
+def integer_to_string(num)
     result = []
     while num > 0 
         result.unshift(num % 10)
@@ -33,12 +33,12 @@ end
 #    num = array.shift
 #end
 
-p split(4321)
+#p split(4321)
 #yo = split(4321)
 #p become_str(yo)
 
 
-#integer_to_string(4321) == '4321'
-#integer_to_string(0) == '0'
-#integer_to_string(5000) == '5000'
+p integer_to_string(4321) == '4321'
+p integer_to_string(0) == '0'
+p integer_to_string(5000) == '5000'
 
