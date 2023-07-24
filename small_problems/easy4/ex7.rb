@@ -1,7 +1,5 @@
 def split_it_to_array(str)
-    arr = []
-    arr << (str.split(''))
-    arr
+    str.split('')
 end  
 
 p split_it_to_array('4321')
