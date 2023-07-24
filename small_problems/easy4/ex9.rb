@@ -25,10 +25,17 @@ def split(num)
         result.unshift(num % 10)
         num /= 10
     end
-    result
+    result.join("")
 end
 
+#def become_str(array)
+#    str = ""
+#    num = array.shift
+#end
+
 p split(4321)
+#yo = split(4321)
+#p become_str(yo)
 
 
 #integer_to_string(4321) == '4321'
