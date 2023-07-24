@@ -7,7 +7,7 @@ def integer_to_string(num)
             result.unshift(num % 10)
             num /= 10
         end
-        result = result.join("")
+        result = "+" + result.join("")
     else
         num = num * (-1)
         while num > 0 
