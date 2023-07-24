@@ -18,9 +18,10 @@ def multisum(num)
             total += i
         i += 1
     end
+    total
 end
 
-multisum(3) == 3
-multisum(5) == 8
-multisum(10) == 33
-multisum(1000) == 234168
+puts multisum(3) #== 3
+puts multisum(5) #== 8
+puts multisum(10) #== 33
+puts multisum(1000) #== 234168
