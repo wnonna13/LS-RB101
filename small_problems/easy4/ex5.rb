@@ -14,8 +14,9 @@ def multisum(num)
     i = 0 
     total = 0
     while i <= num
-        (i % 3 == 0) || (i % 5 == 0)
-            total += i
+        if (i % 3 == 0) || (i % 5 == 0)
+            total += i 
+        end
         i += 1
     end
     total
