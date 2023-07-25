@@ -3,5 +3,5 @@
 # perform the operation on the two numbers
 # output the result
 
-answer = gets()
-puts (answer)
+answer = Kernel.gets()
+Kernel.puts (answer)
