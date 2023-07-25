@@ -10,3 +10,4 @@ Kernel.puts("Welcome to Calculator!")
 
 Kernel.puts("What's the first number?")
 number1 = Kernel.gets()
+Kernel.puts(number1)
