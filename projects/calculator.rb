@@ -3,5 +3,10 @@
 # perform the operation on the two numbers
 # output the result
 
-answer = Kernel.gets()
-Kernel.puts (answer)
+#answer = Kernel.gets()
+#Kernel.puts (answer)
+
+Kernel.puts("Welcome to Calculator!")
+
+Kernel.puts("What's the first number?")
+number1 = Kernel.gets()
