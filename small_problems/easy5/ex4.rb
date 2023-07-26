@@ -20,11 +20,15 @@ end
 def swap(str)
     string = str.split(" ")
     string.each do |point|
-        first = point[0]
-        last = point[-1]
-        mid = point[1..-2]
-        point = "#{last}#{mid}#{first}"
-        puts point
+        if point.length > 1
+            first = point[0]
+            last = point[-1]
+            mid = point[1..-2]
+            point = "#{last}#{mid}#{first}"
+            puts point
+        else
+            puts point
+        end
     end
 
 end
