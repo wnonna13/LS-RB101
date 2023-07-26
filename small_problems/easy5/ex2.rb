@@ -4,6 +4,13 @@
 
 #You may not use ruby's Date and Time classes.
 
+
+# input = num
+# output = string
+
+# method 
+# num % 60  = remainder (minutes)
+
 time_of_day(0) == "00:00"
 time_of_day(-3) == "23:57"
 time_of_day(35) == "00:35"
