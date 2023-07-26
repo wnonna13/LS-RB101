@@ -17,6 +17,8 @@ def split_string(str)
     string = str.split(" ")
 end
 
-swap('Oh what a wonderful day it is') == 'hO thaw a londerfuw yad ti si'
-swap('Abcde') == 'ebcdA'
-swap('a') == 'a'
+p split_string("Oh what a wonderful day it is")
+
+#swap('Oh what a wonderful day it is') == 'hO thaw a londerfuw yad ti si'
+#swap('Abcde') == 'ebcdA'
+#swap('a') == 'a'
