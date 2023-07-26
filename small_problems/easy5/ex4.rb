@@ -22,15 +22,15 @@ def swap(str)
     string.each do |point|
         first = point[0]
         last = point[-1]
-        mid = point[1:-2]
+        mid = point[0..-2]
         point = "#{last}#{mid}#{first}"
-
+        puts point
     end
-
 
 end
 
 p split_string("Oh what a wonderful day it is")
+p swap("Oh what a wonderful day it is")
 
 #swap('Oh what a wonderful day it is') == 'hO thaw a londerfuw yad ti si'
 #swap('Abcde') == 'ebcdA'
