@@ -31,7 +31,7 @@ def swap(str)
             new_str.append(point)
         end
     end
-    new_str
+    new_str.join(" ")
 end
 
 #p split_string("Oh what a wonderful day it is")
