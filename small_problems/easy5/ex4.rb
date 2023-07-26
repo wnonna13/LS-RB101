@@ -35,8 +35,8 @@ def swap(str)
 end
 
 #p split_string("Oh what a wonderful day it is")
-p swap("Oh what a wonderful day it is")
+#p swap("Oh what a wonderful day it is")
 
-#swap('Oh what a wonderful day it is') == 'hO thaw a londerfuw yad ti si'
-#swap('Abcde') == 'ebcdA'
-#swap('a') == 'a'
+p swap('Oh what a wonderful day it is') == 'hO thaw a londerfuw yad ti si'
+p swap('Abcde') == 'ebcdA'
+p swap('a') == 'a'
