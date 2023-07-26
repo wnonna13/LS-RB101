@@ -22,7 +22,7 @@ def swap(str)
     string.each do |point|
         first = point[0]
         last = point[-1]
-        mid = point[0..-2]
+        mid = point[1..-2]
         point = "#{last}#{mid}#{first}"
         puts point
     end
