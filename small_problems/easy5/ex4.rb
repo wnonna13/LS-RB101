@@ -13,6 +13,9 @@
     # string[0] = last_letter
     # string[-1] = first_letter
 
+def split_string(str)
+    string = str.split(" ")
+end
 
 swap('Oh what a wonderful day it is') == 'hO thaw a londerfuw yad ti si'
 swap('Abcde') == 'ebcdA'
