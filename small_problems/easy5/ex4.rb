@@ -13,27 +13,28 @@
     # string[0] = last_letter
     # string[-1] = first_letter
 
-def split_string(str)
-    string = str.split(" ")
-end
+#def split_string(str)
+#    string = str.split(" ")
+#end
 
 def swap(str)
     string = str.split(" ")
+    new_str = []
     string.each do |point|
         if point.length > 1
             first = point[0]
             last = point[-1]
             mid = point[1..-2]
             point = "#{last}#{mid}#{first}"
-            puts point
+            new_str.append(point)
         else
-            puts point
+            new_str.append(point)
         end
     end
-
+    new_str
 end
 
-p split_string("Oh what a wonderful day it is")
+#p split_string("Oh what a wonderful day it is")
 p swap("Oh what a wonderful day it is")
 
 #swap('Oh what a wonderful day it is') == 'hO thaw a londerfuw yad ti si'
