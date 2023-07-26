@@ -17,6 +17,19 @@ def split_string(str)
     string = str.split(" ")
 end
 
+def swap(str)
+    string = str.split(" ")
+    string.each do |point|
+        first = point[0]
+        last = point[-1]
+        mid = point[1:-2]
+        point = "#{last}#{mid}#{first}"
+
+    end
+
+
+end
+
 p split_string("Oh what a wonderful day it is")
 
 #swap('Oh what a wonderful day it is') == 'hO thaw a londerfuw yad ti si'
