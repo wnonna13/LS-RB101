@@ -10,7 +10,8 @@
 
 # method 
 # num % 60  = remainder (minutes)
-# num. round(down) = (num / 60 / 24) = hours 
+# num. round(down) = (num / 60)  = hours 
+    # if num > 24 -> / 24 = hours
 
 
 time_of_day(0) == "00:00"
