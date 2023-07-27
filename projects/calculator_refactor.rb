@@ -6,33 +6,50 @@ def valid_number?(num)
     num.to_i != 0 
 end
 
+
+def validate()
+    loop do 
+        prompt("Please enter a number:")
+        num = Kernel.gets().chomp()
+
+    if valid_number?(num)
+        break
+    else
+        prompt("Hmmm...that doesn't look like a valid number")
+    end
+    
+end
+
+number1 = validate()
+number2 = validate()
+
 prompt("Welcome to Calculator")
 
 number1 = ''
 number2 = ''
 
-loop do 
-    prompt("What's the first number?")
-    number1 = Kernel.gets().chomp()
+#loop do 
+#    prompt("What's the first number?")
+##   number1 = Kernel.gets().chomp()
 
-    if valid_number?(number1)
-        break
-    else
-        prompt("Hmmm...that doesn't look like a valid number")
-    end
+ #   if valid_number?(number1)
+ #       break
+ #   else
+ #       prompt("Hmmm...that doesn't look like a valid number")
+ #   end
 
-end
+#end
 
-loop do 
-    prompt("What's the second number?")
-    number2 = Kernel.gets().chomp()
+#loop do 
+#    prompt("What's the second number?")
+#    number2 = Kernel.gets().chomp()
 
-    if valid_number?(number2)
-        break
-    else 
-        prompt("Hmmm...that doesn't look like a valid number")
-    end
-end
+#    if valid_number?(number2)
+#        break
+#    else 
+#        prompt("Hmmm...that doesn't look like a valid number")
+#    end
+#end
 
 
 
