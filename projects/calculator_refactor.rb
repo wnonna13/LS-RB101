@@ -1,6 +1,10 @@
-Kernel.puts("Welcome to Calculator!")
+def prompt(message)
+    Kernel.puts("=> #{message}")
+end
 
-Kernel.puts("What's the first number?")
+Kernel.puts("=> Welcome to Calculator!")
+
+Kernel.puts("=> What's the first number?")
 number1 = Kernel.gets().chomp()
 
 Kernel.puts("What's the second number?")
