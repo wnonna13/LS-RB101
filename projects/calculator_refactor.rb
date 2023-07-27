@@ -2,7 +2,9 @@ def prompt(message)
     Kernel.puts("=> #{message}")
 end
 
-def
+def valid_number?(num)
+    num.to_i != 0 
+end
 
 prompt("Welcome to Calculator")
 
