@@ -8,7 +8,7 @@ end
 
 prompt("Welcome to Calculator")
 
-
+number1 = ''
 loop do 
     prompt("What's the first number?")
     number1 = Kernel.gets().chomp()
