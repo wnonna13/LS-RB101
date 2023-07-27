@@ -9,6 +9,8 @@ end
 prompt("Welcome to Calculator")
 
 number1 = ''
+number2 = ''
+
 loop do 
     prompt("What's the first number?")
     number1 = Kernel.gets().chomp()
@@ -21,8 +23,18 @@ loop do
 
 end
 
-prompt("What's the second number?")
-number2 = Kernel.gets().chomp()
+loop do 
+    prompt("What's the second number?")
+    number2 = Kernel.gets().chomp()
+
+    if valid_number?(number2)
+        break
+    else 
+        prompt("Hmmm...that doesn't look like a valid number")
+    end
+end
+
+
 
 prompt("What operation would you like to perform? 1)add 2)subtract 3)multiply 4)divide")
 
