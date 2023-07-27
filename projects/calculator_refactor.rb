@@ -19,3 +19,10 @@ elsif operator == '3'
 else 
     result = number1.to_f() / number2.to_f()
 end
+
+case operator
+    when '1' then (number1.to_i() + number2.to_i())
+    when '2' then (number1.to_i() - number2.to_i())
+    when '3' then (number1.to_i() * number2.to_i())
+    when '4' then (number1.to_f() / number2.to_f())
+end
