@@ -51,10 +51,12 @@ is_Active = true
 while is_Active == true
     do_program()
     prompt("Do you want to use the Calculator again?")
+    prompt("Please enter: Yes or No")
     choice = Kernel.gets().chomp()
-    if choice == true
+    if choice.downcase == 'yes'
         is_Active = true
     else
+        prompt("Thank you for using the Calculator!")
         is_Active = false
     end
 end
