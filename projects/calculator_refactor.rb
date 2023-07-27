@@ -31,6 +31,24 @@ number2 = validate()
 
 prompt("Welcome to Calculator")
 
+prompt("What operation would you like to perform? 1)add 2)subtract 3)multiply 4)divide")
+
+operator = Kernel.gets().chomp()
+
+result = case operator
+    when '1' then (number1.to_i() + number2.to_i())
+    when '2' then (number1.to_i() - number2.to_i())
+    when '3' then (number1.to_f() * number2.to_f())
+    when '4' then (number1.to_f() / number2.to_f())
+end
+
+prompt("The result is #{result}")
+
+
+
+
+
+# OTHER CODE
 
 #loop do 
 #    prompt("What's the first number?")
@@ -54,21 +72,3 @@ prompt("Welcome to Calculator")
 #        prompt("Hmmm...that doesn't look like a valid number")
 #    end
 #end
-
-
-
-prompt("What operation would you like to perform? 1)add 2)subtract 3)multiply 4)divide")
-
-operator = Kernel.gets().chomp()
-
-p number1
-p number2
-
-result = case operator
-    when '1' then (number1.to_i() + number2.to_i())
-    when '2' then (number1.to_i() - number2.to_i())
-    when '3' then (number1.to_f() * number2.to_f())
-    when '4' then (number1.to_f() / number2.to_f())
-end
-
-prompt("The result is #{result}")
