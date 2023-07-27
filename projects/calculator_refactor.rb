@@ -6,8 +6,7 @@ def valid_number?(num)
     num.to_i != 0 
 end
 
-
-def validate()
+def validate_num_input()
     num = ''
     loop do 
         prompt("Please enter a number:")
@@ -25,9 +24,8 @@ end
 number1 = ''
 number2 = ''
 
-
-number1 = validate()
-number2 = validate()
+number1 = validate_num_input()
+number2 = validate_num_input()
 
 prompt("Welcome to Calculator")
 
