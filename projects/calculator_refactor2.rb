@@ -46,7 +46,17 @@ def do_program()
 end
 
 
+is_Active = true
 
+while is_Active == true
+    do_program()
+    prompt("Do you want to use the Calculator again?")
+    choice = Kernel.gets().chomp()
+    if choice == true
+        is_Active = true
+    else
+        is_Active = false
+end
 
 
 
